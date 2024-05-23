@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "./Image";
 import "./Main.css";
+import SocialBar from "../SocialBar/SocialBar";
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
       <div>
         <Image />
       </div>
+      <SocialBar />
     </div>
   );
 };

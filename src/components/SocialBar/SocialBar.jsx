@@ -8,7 +8,7 @@ import {
 import "../SocialBar/css/SocialBar.css";
 export default function SocialBar() {
   return (
-    <div className="social-container position-absolute bottom-0 start-50 translate-middle">
+    <div className="social-container m-auto">
       {/* <h3>Social Bar</h3> */}
 
       <a href="https://www.instagram.com/" className="instagram social">

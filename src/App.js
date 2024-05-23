@@ -3,7 +3,6 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Main from "./components/Main/Main";
-import SocialBar from "./components/SocialBar/SocialBar";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-      <SocialBar />
     </div>
   );
 }
