@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react";
+import Image from "./Image";
+import "./Main.css";
 
 const Main = () => {
   return (
     <div>
-      <h1>
-        Home
-      </h1>
+      <div>
+        <Image />
+      </div>
     </div>
   );
-}
+};
 
 export default Main;

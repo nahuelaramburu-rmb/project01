@@ -5,10 +5,10 @@ import {
   faTiktok,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-
+import "../SocialBar/css/SocialBar.css";
 export default function SocialBar() {
   return (
-    <div class="social-container m-auto">
+    <div className="social-container position-absolute bottom-0 start-50 translate-middle">
       {/* <h3>Social Bar</h3> */}
 
       <a href="https://www.instagram.com/" className="instagram social">

@@ -7,3 +7,7 @@
 # se instalo fuentes y faviconsde fortawesome
 
 # npm install --save @fortawesome/react-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons
+
+# se instalo react-responsive
+
+# npm install --save react-responsive
