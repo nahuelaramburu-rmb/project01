@@ -10,7 +10,7 @@ const Form = () => {
     e.preventDefault();
 
     try {
-      const result = await emailjs.sendForm('service_iob1iig', 'template_gn6o3ko', form.current, 'CnOL5dik_JfPX5DNW');
+      const result = await emailjs.sendForm('Service_key', 'template_Key', form.current, 'Private_key');
       console.log('Email enviado: ', result.text);
     } catch (error) {
       console.error('Error al enviar el email: ', error.text);
