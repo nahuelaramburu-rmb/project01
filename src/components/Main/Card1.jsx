@@ -2,7 +2,7 @@ import logo from "./img/logo.jpg";
 import foto1 from "./img/foto1.jpg";
 import MediaQuery from "react-responsive";
 
-export default function Image() {
+export default function Card1() {
   return (
     <div>
       <MediaQuery maxWidth={512}>
