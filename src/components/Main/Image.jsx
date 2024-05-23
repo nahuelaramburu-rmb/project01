@@ -8,16 +8,16 @@ export default function Image() {
       <MediaQuery maxWidth={512}>
         {/* <div className="row"> */}
         <div className="card">
-          <div className="opacity-75">
+          <div className="m-auto opacity-75 ">
             <img
               className="card-img-top "
-              style={{ width: "auto" }}
+              style={{ width: "70%" }}
               src={logo}
               alt="Logo del cliente"
             />
           </div>
 
-          <div className="card-body">
+          <div className="card-body m-auto">
             <h3>Ricardo Chiani</h3>
             <ul>
               <li>Coach Ontológico Profecional</li>
@@ -26,10 +26,10 @@ export default function Image() {
             </ul>
           </div>
 
-          <div className="">
+          <div className="m-auto">
             <img
               className="card-img-bottom"
-              style={{ width: "50%" }}
+              style={{ width: "100%" }}
               src={foto1}
               alt="Foto del Cliente"
             />
