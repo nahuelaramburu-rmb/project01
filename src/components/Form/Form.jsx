@@ -14,10 +14,9 @@ const Form = () => {
 
     try {
       const result = await emailjs.sendForm('service_v2ms748', 'template_crgep7n', form.current, '2KYxDrI2XZTk92AHv');
-      console.log('Email enviado: ', result.text);
       toast.success('Su formulario ha sido enviado');
+      form.current.reset();
     } catch (error) {
-      console.error('Error al enviar el email: ', error.text);
       toast.error('Hubo un error al enviar el formulario. Inténtelo de nuevo.');
     }
   };
