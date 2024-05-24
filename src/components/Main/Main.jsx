@@ -1,12 +1,12 @@
 import React from "react";
-import Card1 from "./Card1";
+import CardMain from "../CardMain/CardMain";
 import SocialBar from "../SocialBar/SocialBar";
 
 const Main = () => {
   return (
     <div>
       <div>
-        <Card1 />
+        <CardMain />
       </div>
       <SocialBar />
     </div>
