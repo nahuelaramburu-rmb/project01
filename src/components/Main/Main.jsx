@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
+import CardMain from "../CardMain/CardMain";
+import SocialBar from "../SocialBar/SocialBar";
 
 const Main = () => {
   return (
     <div>
-      <h1>
-        Home
-      </h1>
+      <div>
+        <CardMain />
+      </div>
+      <SocialBar />
     </div>
   );
-}
+};
 
 export default Main;
