@@ -11,3 +11,12 @@
 # se instalo react-responsive
 
 # npm install --save react-responsive
+
+# npm intall react-toastify (se importa en el ContactForm (
+
+    import { ToastContainer, toast } from "react-toastify";
+    import "react-toastify/dist/ReactToastify.css";
+
+# ))
+
+# npm install @emailjs/browser

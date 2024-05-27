@@ -1,4 +1,5 @@
 import foto1 from "../../assets/imagenes/foto1.jpg";
+import ContactForm from "../ContactForm/ContactForm";
 
 export default function CardMain() {
   return (
@@ -16,10 +17,10 @@ export default function CardMain() {
           <img src={foto1} alt="Foto del Cliente" style={{ width: "100%" }} />
         </div>
       </div>
+      <ContactForm />
     </div>
   );
 }
-
 
 //  ---- codigo anterior  lo vamos a cortar un poco usando boostrapt  ----
 // ----- para  hacerlo responsive... col-12 son 12 columnas, en pantallas chicas
