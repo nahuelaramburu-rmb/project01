@@ -11,7 +11,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const result = await emailjs.sendForm(
+      await emailjs.sendForm(
         "service_v2ms748",
         "template_crgep7n",
         form.current,
