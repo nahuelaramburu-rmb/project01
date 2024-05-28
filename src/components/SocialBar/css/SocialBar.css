@@ -1,0 +1,45 @@
+.social-container {
+  width: fit-content;
+  padding: 20px;
+  /* border: 1px solid black; */
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.whatsapp {
+  color: black;
+}
+
+a.gmail {
+  color: black;
+}
+
+a.youtube {
+  color: black;
+}
+
+a.instagram {
+  color: black;
+}
+
+a.facebook {
+  color: black;
+}
+
+a.tiktok {
+  color: black;
+}
+
+a.linkedin {
+  color: black;
+}
