@@ -2,9 +2,6 @@
 
 # se instalo el react-router-dom
 
-<<<<<<< HEAD
-#Probando rama remoto
-=======
 # se instalo bootstrap@5.3.3 (21/05/24)
 
 # se instalo fuentes y faviconsde fortawesome
@@ -23,4 +20,3 @@
 # ))
 
 # npm install @emailjs/browser
->>>>>>> 9979a6080d76191de9b46bf12a42944fb41f7586
