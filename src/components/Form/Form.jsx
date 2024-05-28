@@ -22,14 +22,14 @@ const Form = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100">
-      <div className="ontainer d-flex flex-wrap justify-contenct-between align-items-center">
+<div className="d-flex justify-content-center align-items-center vh-100">
+      <div className="container d-flex flex-wrap justify-contenct-between align-items-center">
         <div className="form-container p-4" style={{ flex: '1 1 45%', minWidth: '300px' }}>
           <form ref={form} onSubmit={sendEmail} className="d-flex flex-column gap-3">
-            <input type="text" name="user_name" placeholder="Nombre" className="form-control" required />
-            <input type="text" name="user_lastName" placeholder="Apellido" className="form-control" required />
-            <input type="email" name="user_email" placeholder="Correo" className="form-control" required />
-            <textarea name="message" rows="7" placeholder="Mensaje" className="form-control" required></textarea>
+            <input type="text" name="user_name" placeholder="Nombre" className="form-control rounded-pill" required />
+            <input type="text" name="user_lastName" placeholder="Apellido" className="form-control rounded-pill" required />
+            <input type="email" name="user_email" placeholder="Correo" className="form-control rounded-pill" required />
+            <textarea name="message" rows="7" placeholder="Mensaje" className="form-control rounded-pill" required></textarea>
             <button type="submit" className="btn btn-dark mt-3">Enviar Mensaje</button>
           </form>
         </div>
