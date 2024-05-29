@@ -7,15 +7,84 @@
   pointer-events: none;
 }
 
-textarea {
-  resize: none;
+/* ContactForm.css */
+.form-control-custom, .btn-custom {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px; /* Adding border-radius */
+  text-align: center;
+  width: 65%;
 }
+
+
+textarea.form-control-custom {
+  resize: none; /* Prevent resizing */
+  width: 65%;
+
+}
+
+.img-fluid {
+  border-radius: 20px; /* Adding border-radius to the image */
+}
+
+
+button.btn-custom {
+  width: 50%; /* Half the size of the inputs */
+}
+
+
+/*Carousle*/
+
+/* Carrusel.css */
+
+.Carrusel {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.carrusel-title {
+  margin-bottom: 50px;
+}
+
+.carrusel-image-wrapper {
+  margin: 0px 30px;
+}
+
+.carrusel-image-wrapper img {
+  width: 100px; /* Ajusta este valor según el tamaño deseado */
+  height: 100px; /* Ajusta este valor según el tamaño deseado */
+  object-fit: contain; /* Asegura que la imagen se escale correctamente */
+}
+
+
+@media (max-width: 768px) {
+  .image-container {
+    display: none;
+  }
+}
+
+/* Ensure button is centered */
+button.btn-custom {
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 30%; /* Half the size of the inputs */
+  align-self: center; /* Center the button */
+}
+
+/* Placeholder color */
+.form-control-custom::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Make placeholders white with some transparency */
+}
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;

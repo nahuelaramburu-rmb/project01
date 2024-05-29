@@ -1,4 +1,5 @@
 import foto1 from "../../assets/imagenes/foto1.jpg";
+import Carrusel from "../Carousel/Carrusel";
 import ContactForm from "../ContactForm/ContactForm";
 
 export default function CardMain() {
@@ -17,6 +18,7 @@ export default function CardMain() {
           <img src={foto1} alt="Foto del Cliente" style={{ width: "100%" }} />
         </div>
       </div>
+      <Carrusel/>
       <ContactForm />
     </div>
   );
