@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -7,9 +7,17 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function Bio() {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
   return (
     <div className="container">
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel1"}
+        onChange={handleChange("panel1")}
+      >
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}
           aria-controls="panel1-content"
@@ -30,14 +38,17 @@ export default function Bio() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel2"}
+        onChange={handleChange("panel2")}
+      >
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+          aria-controls="panel2-content"
+          id="panel2-header"
         >
           <Typography>
-            <h2>Mi historia</h2>
+            <h3>Mi historia</h3>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -63,14 +74,17 @@ export default function Bio() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel3"}
+        onChange={handleChange("panel3")}
+      >
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+          aria-controls="panel3-content"
+          id="panel3-header"
         >
           <Typography>
-            <h2>Frases que me identifican</h2>
+            <h3>Frases que me identifican</h3>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -88,14 +102,17 @@ export default function Bio() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel4"}
+        onChange={handleChange("panel4")}
+      >
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+          aria-controls="panel4-content"
+          id="panel4-header"
         >
           <Typography>
-            <h3>Mi misión:</h3>
+            <h3>Mi misión</h3>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -113,14 +130,17 @@ export default function Bio() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel5"}
+        onChange={handleChange("panel5")}
+      >
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+          aria-controls="panel5-content"
+          id="panel5-header"
         >
           <Typography>
-            <h3>Mi Visión:</h3>
+            <h3>Mi Visión</h3>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -142,88 +162,107 @@ export default function Bio() {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion
+        expanded={expanded === "panel6"}
+        onChange={handleChange("panel6")}
+      >
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
+          aria-controls="panel6-content"
+          id="panel6-header"
         >
           <Typography>
-            <h2>Formación académica</h2>
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            <ul style={{ listStyleType: "none" }}>
-              <li></li>
-              <li>
-                ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
-                Profesional (aval internacional FICOP - AACOP)
-              </li>
-
-              <li>
-                INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
-                Neurolingüística) (aval internacional IANLP)
-              </li>
-              <li>
-                CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
-                con especialidad clínica
-              </li>
-
-              <li>UCA - Universidad Católica Argentina Neuropsicoeducador </li>
-            </ul>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-        >
-          <Typography>
-            <h2>Beneficios de un proceso de coaching y PNL</h2>
+            <h3>Formación académica</h3>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
             <ul>
               <li>
+                ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
+                Profesional (aval internacional FICOP - AACOP)
+              </li>
+              <br />
+
+              <li>
+                INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
+                Neurolingüística) (aval internacional IANLP)
+              </li>
+              <br />
+              <li>
+                CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
+                con especialidad clínica
+              </li>
+              <br />
+
+              <li>UCA - Universidad Católica Argentina Neuropsicoeducador </li>
+              <br />
+            </ul>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion
+        expanded={expanded === "panel7"}
+        onChange={handleChange("panel7")}
+      >
+        <AccordionSummary
+          expandIcon={<ArrowDownwardIcon />}
+          aria-controls="panel7-content"
+          id="panel7-header"
+        >
+          <Typography>
+            <h3>Beneficios de un proceso de coaching y PNL</h3>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            <ul style={{ listStyleType: "none" }}>
+              <li>
                 Convertirse en un observador más consciente de uno mismo y del
                 entorno.
               </li>
+              <br />
               <li>
                 Definir el tipo de vida y carrera que deseas, y tomar las
                 acciones necesarias para alcanzarla.
               </li>
+              <br />
               <li>
                 Transformar conductas reactivas, asumiendo el control de tu
                 futuro.
               </li>
+              <br />
               <li>
                 Diseñar conversaciones que abran nuevas oportunidades y
                 concreten posibilidades.
               </li>
+              <br />
               <li>
                 Planificar acciones efectivas que generen resultados antes
                 inalcanzables.
               </li>
+              <br />
               <li>
                 Coordinar estrategias para lograr resultados extraordinarios.
               </li>
+              <br />
               <li>Superar problemas actuales y diseñar un futuro deseado.</li>
+              <br />
               <li>
                 Crear un modelo de transformación profunda en la cultura
                 organizacional.
               </li>
+              <br />
               <li>
                 Promover entornos de confianza para equipos de alto rendimiento.
               </li>
+              <br />
               <li>
                 Identificar emociones que abren posibilidades y aprender a
                 gestionarlas eficazmente para alcanzar tus metas.
               </li>
+              <br />
             </ul>
           </Typography>
         </AccordionDetails>
