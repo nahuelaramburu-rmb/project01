@@ -5,16 +5,16 @@ export default function CardMain() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-12 col-md-6 justify-content-center">
-          <h3>Ricardo Chiani</h3>
-          <ul>
+        <div className="col-12 col-md-5 m-auto ">
+          <h2 style={{ fontWeight: "700" }}>Ricardo Chiani</h2>
+          <ul style={{ listStyleType: "none" }}>
             <li>Coach Ontológico Profecional</li>
             <li>Neuropsicoeducador</li>
             <li>Hipnoterapeuta</li>
           </ul>
         </div>
-        <div className="col-12 col-md-6 justify-content-center">
-          <img src={foto1} alt="Foto del Cliente" style={{ width: "100%" }} />
+        <div className="col-12 col-md-5 m-auto justify-content-center">
+          <img src={foto1} alt="Foto del Cliente" style={{ width: "70%" }} />
         </div>
       </div>
       <ContactForm />
