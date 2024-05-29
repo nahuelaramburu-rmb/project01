@@ -12,28 +12,40 @@ img.logo {
   background: none;
   border: none;
   display: none;
-  
+  font-size: 32px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: font-size 0.3s, color 0.3s;
+}
+
+.navbar-close:hover {
+  font-size: 36px;
+  color: red;
 }
 
 .header-text {
-  font-size: 2em; /* Ajusta este valor según tus necesidades */
+  font-size: 32px;
   font-weight: bold;
 }
 
-.nav-link-text {
-  color: black !important;
-}
+
+
 
 @media (max-width: 991px) {
   .navbar-collapse.custom-navbar-collapse {
     position: fixed;
-    top: 50px;
-    right: 10px;
+    top: 0;
+    right: 0;
     width: 200px;
+    height: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0;
     overflow: auto;
     transition: all 0.3s ease;
+    z-index: 1050;
+    padding-top: 60px; 
   }
 
   .navbar-close {
@@ -43,8 +55,13 @@ img.logo {
   .navbar-collapse.custom-navbar-collapse.collapsing {
     height: auto !important;
   }
+
+  .nav-link {
+    margin-top: 20px; 
+  }
+
   .nav-link span {
-    font-size: 16px !important; 
+    font-size: 16px !important;
     font-weight: normal !important;
   }
 }
@@ -57,7 +74,7 @@ img.logo {
 
 @media (min-width: 992px) {
   .large-screen {
-    font-size: 1.5em; /* Ajusta este valor según tus necesidades */
+    font-size: 24px;
     font-weight: bold;
   }
 }
@@ -66,7 +83,6 @@ img.logo {
   img.logo {
     max-width: 150px;
     margin-left: 50px;
-    
   }
 }
 
@@ -75,4 +91,9 @@ img.logo {
     max-width: 200px;
     margin-left: 50px;
   }
+}
+
+
+.navbar-nav .nav-link:hover {
+  font-size: 20px !important;
 }

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logos/logo.jpg";
 import "./Header.css";
 
 const Header = () => {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <Navbar
       className="navbar"
@@ -12,6 +14,7 @@ const Header = () => {
       expand="lg"
       bg="white"
       variant="light"
+      expanded={expanded}
     >
       <Navbar.Brand as={Link} to="/">
         <img
@@ -20,20 +23,45 @@ const Header = () => {
           className="logo img-fluid rounded-circle my-3"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Toggle
+        aria-controls="responsive-navbar-nav"
+        onClick={() => setExpanded(expanded ? false : "expanded")}
+      />
       <Navbar.Collapse
         id="responsive-navbar-nav"
         className="custom-navbar-collapse"
       >
+        <button
+          className="navbar-close"
+          onClick={() => setExpanded(false)}
+          aria-label="Cerrar"
+        >
+          &times;
+        </button>
         <Nav className="col-11 justify-content-end">
-          <Nav.Link as={Link} to="/bio">
+          <Nav.Link
+            className="nav-link-text"
+            as={Link}
+            to="/bio"
+            onClick={() => setExpanded(false)}
+          >
             <span className="h3 font-weight-bold">BIO</span>
           </Nav.Link>
-          <Nav.Link as={Link} to="/clientes">
-            <span className="h3 font-weight-bold ">CLIENTES</span>
+          <Nav.Link
+            className="nav-link-text"
+            as={Link}
+            to="/clientes"
+            onClick={() => setExpanded(false)}
+          >
+            <span className="h3 font-weight-bold">CLIENTES</span>
           </Nav.Link>
-          <Nav.Link as={Link} to="/especializaciones">
-            <span className="h3 font-weight-bold ">ESPECIALIZACIONES</span>
+          <Nav.Link
+            className="nav-link-text"
+            as={Link}
+            to="/especializaciones"
+            onClick={() => setExpanded(false)}
+          >
+            <span className="h3 font-weight-bold">ESPECIALIZACIONES</span>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
