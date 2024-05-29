@@ -20,3 +20,5 @@
 # ))
 
 # npm install @emailjs/browser
+
+#npm install react-fast-marquee
