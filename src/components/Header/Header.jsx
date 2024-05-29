@@ -25,13 +25,7 @@ const Header = () => {
         id="responsive-navbar-nav"
         className="custom-navbar-collapse"
       >
-        <Nav className="ml-auto">
-          <button
-            className="navbar-close"
-            onClick={() => document.querySelector(".navbar-toggler").click()}
-          >
-            Cerrar
-          </button>
+        <Nav className="col-11 justify-content-end">
           <Nav.Link as={Link} to="/bio">
             <span className="h3 font-weight-bold">BIO</span>
           </Nav.Link>
