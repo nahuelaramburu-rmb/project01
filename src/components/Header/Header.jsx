@@ -33,13 +33,13 @@ const Header = () => {
             Cerrar
           </button>
           <Nav.Link as={Link} to="/bio">
-            BIO
+            <span className="h3 font-weight-bold">BIO</span>
           </Nav.Link>
           <Nav.Link as={Link} to="/clientes">
-            CLIENTES
+            <span className="h3 font-weight-bold ">CLIENTES</span>
           </Nav.Link>
           <Nav.Link as={Link} to="/especializaciones">
-            ESPECIALIZACIONES
+            <span className="h3 font-weight-bold ">ESPECIALIZACIONES</span>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import contactUsImage from "../../assets/imagenes/contact-us.jpg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./ContactForm.css";
 
 const ContactForm = () => {
   const form = useRef();
@@ -25,7 +26,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100">
+    <div className="d-flex justify-content-center align-items-center vh-100 contactForm">
       <div className="container d-flex flex-wrap justify-content-between align-items-center">
         <div
           className="form-container p-4"
