@@ -6,15 +6,13 @@ export default function CardMain() {
   return (
     <div className="container">
       <div className="row ">
-        <div className="col-12 col-md-5 m-auto " align="right">
+        <div className="col-12 col-md-5 " align="center">
           <h1 style={{ fontWeight: "700" }}>Ricardo Chiani</h1>
-
-          <ul style={{ listStyleType: "none" }}>
-            <li>Coach Ontológico Profesional</li>
-            <li>Neuropsicoeducador</li>
-            <li>Hipnoterapeuta</li>
-          </ul>
-
+          <p>
+            Coach Ontológico Profesional <br />
+            Neuropsicoeducador <br />
+            Hipnoterapeuta
+          </p>
           <NextEvents />
         </div>
 
