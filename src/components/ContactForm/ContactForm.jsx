@@ -3,8 +3,7 @@ import emailjs from "@emailjs/browser";
 import contactUsImage from "../../assets/imagenes/contact-us.jpg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./ContactForm.css";
-
+import "./ContactForm.css"; // Asegúrate de que esta línea esté presente y correcta
 
 const ContactForm = () => {
   const form = useRef();
@@ -76,4 +75,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-      
