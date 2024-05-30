@@ -1,0 +1,72 @@
+/* Estilos personalizados para el formulario y los botones */
+.form-control-custom, .btn-custom {
+  background-color: #000;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  width: 65%;
+  border: none; /* Remove default border */
+}
+
+/* Evitar cambios de color al enfocar */
+.form-control-custom:focus, .btn-custom:focus, 
+.form-control-custom:active, .btn-custom:active, 
+.form-control-custom:hover, .btn-custom:hover {
+  background-color: #000; /* Maintain black background */
+  color: #fff; /* Maintain white text color */
+  border: none; /* Remove border on focus and hover */
+  box-shadow: none; /* Remove shadow on focus */
+  outline: none; /* Remove outline */
+  
+}
+
+textarea.form-control-custom {
+  resize: none;
+  width: 55%;
+}
+
+/* Estilo de la imagen */
+.img-fluid {
+  border-radius: 30px;
+}
+
+/* Estilo del botón */
+button.btn-custom {
+  width: 15%;
+  margin-top: 10px;
+  border-radius: 15px;
+  align-self: center;
+}
+
+/* Estilo de los placeholders */
+.form-control-custom::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Carrusel */
+.Carrusel {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.carrusel-title {
+  margin-bottom: 50px;
+}
+
+.carrusel-image-wrapper {
+  margin: 0px 30px;
+}
+
+.carrusel-image-wrapper img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    display: none;
+  }
+}
+
+  

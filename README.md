@@ -21,4 +21,14 @@
 
 # npm install @emailjs/browser
 
-#npm install react-fast-marquee
+# Instalacion manual de Material UI
+
+# npm install @mui/material @emotion/react @emotion/styled
+
+# npm install @fontsource/roboto
+
+# npm install @mui/icons-material
+
+# npm install reac-bootstrp
+
+# npm install react-fast-marquee
