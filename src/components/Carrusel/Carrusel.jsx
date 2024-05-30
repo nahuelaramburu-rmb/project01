@@ -8,7 +8,7 @@ function Carrusel() {
   return (
     <div className="Carrusel">
       <div className="carrusel-title">
-        <h1>Funciona?</h1>
+        <h1>Carrusel de Partners</h1>
       </div>
 
       <div>
