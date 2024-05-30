@@ -30,3 +30,5 @@
 # npm install @mui/icons-material
 
 # npm install reac-bootstrp
+
+# npm install react-fast-marquee

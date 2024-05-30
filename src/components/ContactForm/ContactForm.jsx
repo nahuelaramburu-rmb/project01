@@ -7,10 +7,8 @@ import "./ContactForm.css";
 
 const ContactForm = () => {
   const form = useRef();
-
   const sendEmail = async (e) => {
     e.preventDefault();
-
     try {
       await emailjs.sendForm(
         "service_v2ms748",
@@ -26,12 +24,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100 contactForm">
-      <div className="container d-flex flex-wrap justify-content-between align-items-center">
-        <div
-          className="form-container p-4"
-          style={{ flex: "1 1 45%", minWidth: "300px" }}
-        >
+    <div className="d-flex align-items-center vh-100">
+      <div className="container d-flex flex-wrap justify-content-between">
+        <div className="form-container col-12 col-md-6 p-4">
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -41,39 +36,36 @@ const ContactForm = () => {
               type="text"
               name="user_name"
               placeholder="Nombre"
-              className="form-control"
+              className="form-control form-control-custom mx-auto"
               required
             />
             <input
               type="text"
               name="user_lastName"
-              placeholder="Apellido"
-              className="form-control"
+              placeholder="Telefono"
+              className="form-control form-control-custom mx-auto"
               required
             />
             <input
               type="email"
               name="user_email"
               placeholder="Correo"
-              className="form-control"
+              className="form-control form-control-custom mx-auto"
               required
             />
             <textarea
               name="message"
-              rows="7"
+              rows="5"
               placeholder="Mensaje"
-              className="form-control"
+              className="form-control form-control-custom mx-auto"
               required
             ></textarea>
-            <button type="submit" className="btn btn-dark mt-3">
-              Send Message
+            <button type="submit" className="btn btn-custom mx-auto">
+              Enviar
             </button>
           </form>
         </div>
-        <div
-          className="image-container d-none d-md-flex justify-content-center align-items-center"
-          style={{ flex: "1 1 45%", minWidth: "300px" }}
-        >
+        <div className="image-container col-12 col-md-6 d-none d-md-flex justify-content-center align-items-center">
           <img src={contactUsImage} alt="Photo" className="img-fluid" />
         </div>
       </div>
