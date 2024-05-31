@@ -23,7 +23,7 @@
 
 textarea.form-control-custom {
   resize: none;
-  width: 65%; /* Ajustar el ancho */
+  width: 75%; /* Ajustar el ancho */
   height: 100px; /* Ajustar la altura */
 }
 
@@ -95,19 +95,50 @@ button.btn-custom {
   }
 }
 
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .image-container {
-    display: none;
-    /*REVISAR ESTA QUERY YA QUE ES LA Q ROMPE CON EL FORMULARIO*/
+@media (max-width: 480px) {
+  .form-control-custom, .btn-custom {
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    width: 90%; /* Ajustar el ancho */
+    height: 50px; /* Ajustar la altura */
+    border: none; /* Remove default border */
+    font-size: 1.2em; /* Ajustar el tamaño de la fuente */
+  }
+  button.btn-custom {
+    width: 30%; /* Ajustar el ancho del botón */
+    height: 400px; /* Ajustar la altura del botón */
+    margin-top: 10px;
+    border-radius: 20px;
+    align-self: center;
+  }
+  textarea.form-control-custom {
+    resize: none;
+    width: 75%; /* Ajustar el ancho */
+    height: 100%; /* Ajustar la altura */
   }
 }
 
-
-@media (max-width: 1920px) {
-  .image-container {
+@media (max-width: 991px) {
+  .img-fluid{
     display: none;
+  }
+  button.btn.btn-custom.mx-auto{
+    width: 100px;
+    height: 50px;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  .img-fluid{
+    width: auto;
+    height: auto;
+    margin-left: 110px;
+    margin-bottom: 120px;
+    margin-right: 50px;
   }
   .form-control-custom, .btn-custom {
     background-color: #000;
@@ -119,16 +150,11 @@ button.btn-custom {
     border: none; /* Remove default border */
     font-size: 1.2em; /* Ajustar el tamaño de la fuente */
   }
-  button.btn-custom {
-    width: 20%; /* Ajustar el ancho del botón */
-    height: 39px; /* Ajustar la altura del botón */
-    margin-top: 10px;
-    border-radius: 20px;
-    align-self: center;
-  }
+
   textarea.form-control-custom {
     resize: none;
     width: 400px; /* Ajustar el ancho */
     height: auto; /* Ajustar la altura */
   }
 }
+
