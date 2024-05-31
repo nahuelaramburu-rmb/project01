@@ -3,8 +3,8 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-// import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+// import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import SocialBar from "../SocialBar/SocialBar";
 export default function Bio() {
   const [expanded, setExpanded] = useState(false);
@@ -19,7 +19,7 @@ export default function Bio() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
+          expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -43,7 +43,7 @@ export default function Bio() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
+          expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -79,7 +79,7 @@ export default function Bio() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
+          expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
@@ -107,7 +107,7 @@ export default function Bio() {
         onChange={handleChange("panel4")}
       >
         <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
+          expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel4-content"
           id="panel4-header"
         >
@@ -135,7 +135,7 @@ export default function Bio() {
         onChange={handleChange("panel5")}
       >
         <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
+          expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel5-content"
           id="panel5-header"
         >
@@ -167,7 +167,7 @@ export default function Bio() {
         onChange={handleChange("panel6")}
       >
         <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
+          expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel6-content"
           id="panel6-header"
         >
@@ -207,7 +207,7 @@ export default function Bio() {
         onChange={handleChange("panel7")}
       >
         <AccordionSummary
-          expandIcon={<ArrowDownwardIcon />}
+          expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel7-content"
           id="panel7-header"
         >

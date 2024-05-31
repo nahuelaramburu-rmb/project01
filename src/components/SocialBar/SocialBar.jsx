@@ -5,7 +5,7 @@ import {
   faFacebook,
   faInstagram,
   faTiktok,
-  faGoogle,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import "../SocialBar/css/SocialBar.css";
 export default function SocialBar() {
@@ -15,8 +15,11 @@ export default function SocialBar() {
         <FontAwesomeIcon icon={faWhatsapp} size="xl" />
       </a>
 
-      <a href="mailto:ricardochianicoach@gmail.com" className="gmail social">
-        <FontAwesomeIcon icon={faGoogle} size="xl" />
+      <a
+        href="https://www.linkedin.com/in/ricardochiani/"
+        className="linkedin social"
+      >
+        <FontAwesomeIcon icon={faLinkedin} size="xl" />
       </a>
 
       <a
