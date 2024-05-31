@@ -5,7 +5,7 @@ import NextEvents from "./NextEvents/NextEvents";
 export default function CardMain() {
   return (
     <div className="container">
-      <div className="row ">
+      <div className="row">
         <div className="col-12 col-md-5 " align="center">
           <h1 style={{ fontWeight: "700" }}>Ricardo Chiani</h1>
           <p>
@@ -13,7 +13,11 @@ export default function CardMain() {
             Neuropsicoeducador <br />
             Hipnoterapeuta
           </p>
-          <NextEvents />
+          <div className="row justify-content-center">
+            <div className="col-auto">
+              <NextEvents />
+            </div>
+          </div>
         </div>
 
         <div className="col-12 col-md-5 m-auto justify-content-center">
@@ -22,6 +26,7 @@ export default function CardMain() {
 
         <Carrusel />
       </div>
+    
     </div>
   );
 }

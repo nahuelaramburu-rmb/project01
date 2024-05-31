@@ -5,7 +5,6 @@ import {
   faFacebook,
   faInstagram,
   faTiktok,
-  faLinkedin,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 import "../SocialBar/css/SocialBar.css";
