@@ -9,11 +9,11 @@ const Main = () => {
     <div className="container-scroll">
       <div className="section-scroll">
         <CardMain />
-        <div className="spacer"></div> {/* Espaciador después de CardMain */}
+        <div className="spacer"></div>
       </div>
       <div className="section-scroll margin-bottom">
         <ContactForm />
-        <div className="spacer"></div> {/* Espaciador después de ContactForm */}
+        <div className="spacer"></div>
       </div>
       <div className="social-bar">
         <SocialBar />
