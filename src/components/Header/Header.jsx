@@ -41,31 +41,27 @@ const Header = () => {
         <Nav className="col-11 justify-content-end">
           <Nav.Link
             className="nav-link-text"
-            href="#inicio"
+            as={Link}
+            to="/bio"
             onClick={() => setExpanded(false)}
           >
-            <span className="h3 font-weight-bold">INICIO</span>
+            <span className="h3 font-weight-bold">BIO</span>
           </Nav.Link>
           <Nav.Link
             className="nav-link-text"
-            href="#clientes"
+            as={Link}
+            to="/clientes"
             onClick={() => setExpanded(false)}
           >
             <span className="h3 font-weight-bold">CLIENTES</span>
           </Nav.Link>
           <Nav.Link
             className="nav-link-text"
-            href="#especializaciones"
+            as={Link}
+            to="/especializaciones"
             onClick={() => setExpanded(false)}
           >
             <span className="h3 font-weight-bold">ESPECIALIZACIONES</span>
-          </Nav.Link>
-          <Nav.Link
-            className="nav-link-text"
-            href="#contacto"
-            onClick={() => setExpanded(false)}
-          >
-            <span className="h3 font-weight-bold">CONTACTO</span>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
