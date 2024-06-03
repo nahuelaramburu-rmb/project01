@@ -38,7 +38,16 @@ const Header = () => {
         >
           &times;
         </button>
+
         <Nav className="col-11 justify-content-end">
+          <Nav.Link
+            className="nav-link-text"
+            href="/"
+            onClick={() => setExpanded(false)}
+          >
+            <span className="h3 font-weight-bold">INICIO</span>
+          </Nav.Link>
+
           <Nav.Link
             className="nav-link-text"
             as={Link}
@@ -47,6 +56,7 @@ const Header = () => {
           >
             <span className="h3 font-weight-bold">BIO</span>
           </Nav.Link>
+
           <Nav.Link
             className="nav-link-text"
             as={Link}
@@ -62,6 +72,14 @@ const Header = () => {
             onClick={() => setExpanded(false)}
           >
             <span className="h3 font-weight-bold">ESPECIALIZACIONES</span>
+          </Nav.Link>
+
+          <Nav.Link
+            className="nav-link-text"
+            href="#contacto"
+            onClick={() => setExpanded(false)}
+          >
+            <span className="h3 font-weight-bold">CONTACTO</span>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
