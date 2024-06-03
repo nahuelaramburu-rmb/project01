@@ -1,4 +1,5 @@
 import foto1 from "../../assets/imagenes/foto1.jpg";
+import Carrusel from "../Carrusel/Carrusel";
 import NextEvents from "./NextEvents/NextEvents";
 
 export default function CardMain() {
@@ -22,7 +23,10 @@ export default function CardMain() {
         <div className="col-12 col-md-5 m-auto justify-content-center">
           <img src={foto1} alt="Foto del Cliente" style={{ width: "90%" }} />
         </div>
+
+        <Carrusel />
       </div>
+    
     </div>
   );
 }

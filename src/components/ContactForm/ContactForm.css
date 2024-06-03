@@ -3,13 +3,13 @@
     color: #fff;
     border-radius: 10px; /* Adding border-radius */
     text-align: center;
-    
+    width: 65%;
   }
   
   
   textarea.form-control-custom {
     resize: none; /* Prevent resizing */
-    
+    width: 65%;
   
   }
   
@@ -19,11 +19,32 @@
   
   
   button.btn-custom {
-    width: 50%; 
+    width: 50%; /* Half the size of the inputs */
   }
   
   
-
+  /*Carousle*/
+  
+  /* Carrusel.css */
+  
+  .Carrusel {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .carrusel-title {
+    margin-bottom: 50px;
+  }
+  
+  .carrusel-image-wrapper {
+    margin: 0px 30px;
+  }
+  
+  .carrusel-image-wrapper img {
+    width: 100px; /* Ajusta este valor según el tamaño deseado */
+    height: 100px; /* Ajusta este valor según el tamaño deseado */
+    object-fit: contain; /* Asegura que la imagen se escale correctamente */
+  }
   
   
   @media (max-width: 768px) {
@@ -36,7 +57,7 @@
   button.btn-custom {
     margin-top: 10px;
     border-radius: 15px;
-    width: 50%; 
+    width: 30%; /* Half the size of the inputs */
     align-self: center; /* Center the button */
   }
   
