@@ -1,4 +1,5 @@
 import foto1 from "../../assets/imagenes/foto1.jpg";
+
 import fotochiani1 from "../../assets/imagenes/fotochiani1.png";
 import Carrusel from "../Carrusel/Carrusel";
 import NextEvents from "./NextEvents/NextEvents";
@@ -29,8 +30,6 @@ export default function CardMain() {
             style={{ width: "70%", borderRadius: "50px" }}
           />
         </div>
-
-        <Carrusel />
       </div>
     </div>
   );

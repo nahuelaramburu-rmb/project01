@@ -1,0 +1,18 @@
+.Carrusel {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.carrusel-title {
+  margin-bottom: 50px;
+}
+
+.carrusel-image-wrapper {
+  margin: 0px 30px;
+}
+
+.carrusel-image-wrapper img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
