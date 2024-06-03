@@ -15,7 +15,7 @@ const Main = () => {
         <ContactForm />
         <div className="spacer"></div> {/* Espaciador después de ContactForm */}
       </div>
-      <div className="social-bar">
+      <div className="social-bar" style={{ zIndex: 9999 }}>
         <SocialBar />
       </div>
     </div>

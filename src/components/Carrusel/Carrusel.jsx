@@ -12,7 +12,7 @@ function Carrusel() {
       </div>
 
       <div>
-        <Marquee direction="right" speed={100} delay={5}>
+        <Marquee direction="left" speed={50} delay={5}>
           <div className="carrusel-image-wrapper">
             <img src={img1} alt="Partner 1" />
           </div>
