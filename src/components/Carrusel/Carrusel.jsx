@@ -122,3 +122,111 @@ function Carrusel() {
     <MediaQuery minWidth={513}>
     <div className="Carrusel">
       <div className="glassT">
+      <div className="carrusel-title">
+          <h1 className="animacion">Carrusel de Partners</h1>    
+      </div>
+
+      <div>
+
+        <Marquee direction="left" speed={110} delay={1}>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img1}
+              alt="Partner 1"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img2}
+              alt="Partner 2"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img3}
+              alt="Partner 3"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img4}
+              alt="Partner 3"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img5}
+              alt="Partner 3"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img6}
+              alt="Partner 3"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img7}
+              alt="Partner 3"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img8}
+              alt="Partner 3"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img9}
+              alt="Partner 3"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img10}
+              alt="Partner 3"
+              className="carrusel-image img-fluid"
+              style={{ width: '200px', height: '200px', objectFit: 'cover' }}
+            />
+          </div>
+          <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
+            <img
+              src={img11}
+              alt="Partner 3"
+              className="carrusel-image img-fluid"
+              style={{ width: '100px', height: '100px', objectFit: 'cover' }}
+            />
+          </div>
+        </Marquee>
+      </div>
+      </div >
+    </div>
+  
+    </MediaQuery>
+</div>
+
+
+  );
+}
+
+export default Carrusel;
