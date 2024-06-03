@@ -1,143 +1,80 @@
-/* Estilos personalizados para el formulario y los botones */
-.form-control-custom,
-.btn-custom {
-  background-color: #000;
-  color: #fff;
-  border-radius: 25px;
-  text-align: center;
-  width: 75%; /* Ajustar el ancho */
-  height: 50px; /* Ajustar la altura */
-  border: none; /* Remove default border */
-  font-size: 1.2em; /* Ajustar el tamaño de la fuente */
-}
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import contactUsImage from "../../assets/imagenes/contact-us.jpg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./ContactForm.css"; // Asegúrate de que esta línea esté presente y correcta
 
-/* Evitar cambios de color al enfocar */
-.form-control-custom:focus,
-.btn-custom:focus,
-.form-control-custom:active,
-.btn-custom:active,
-.form-control-custom:hover,
-.btn-custom:hover {
-  background-color: #000; /* Maintain black background */
-  color: #fff; /* Maintain white text color */
-  border: none; /* Remove border on focus and hover */
-  box-shadow: none; /* Remove shadow on focus */
-  outline: none; /* Remove outline */
-}
 
-textarea.form-control-custom {
-  resize: none;
-  width: 75%; /* Ajustar el ancho */
-  height: 100px; /* Ajustar la altura */
-}
+const ContactForm = () => {
+  const form = useRef();
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    try {
+      await emailjs.sendForm(
+        "service_v2ms748",
+        "template_crgep7n",
+        form.current,
+        "2KYxDrI2XZTk92AHv"
+      );
+      toast.success("Su formulario ha sido enviado");
+      form.current.reset();
+    } catch (error) {
+      toast.error("Hubo un error al enviar el formulario. Inténtelo de nuevo.");
+    }
+  };
 
-/* Estilo de la imagen */
-.img-fluid {
-  border-radius: 30px;
-}
+  return (
+    <div className="w-100">
+        <div className="d-flex align-items-center vh-100">
+          <div className="container d-flex flex-wrap justify-content-between">
+            <div className="form-container col-12 col-md-6 p-4 ">
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className="d-flex flex-column gap-3 "
+              >
+                <input
+                  type="text"
+                  name="user_name"
+                  placeholder="Nombre"
+                  className="form-control form-control-custom mx-auto"
+                  required
+                />
+                <input
+                  type="text"
+                  name="user_lastName"
+                  placeholder="Telefono"
+                  className="form-control form-control-custom mx-auto"
+                  required
+                />
+                <input
+                  type="email"
+                  name="user_email"
+                  placeholder="Correo"
+                  className="form-control form-control-custom mx-auto"
+                  required
+                />
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Mensaje"
+                  className="form-control form-control-custom mx-auto"
+                  required
+                ></textarea>
+                <button type="submit" className="btn btn-custom mx-auto">
+                  Enviar
+                </button>
+              </form>
+            </div>
+            <div className="image-container col-12 col-md-6 d-none d-md-flex justify-content-center align-items-center">
+              <img src={contactUsImage} alt="Photo" className="img-fluid" />
+            </div>
+            </div>
+          <ToastContainer />
+        </div>
+  </div>
+  );
+};
 
-/* Estilo del botón */
-button.btn-custom {
-  width: 20%; /* Ajustar el ancho del botón */
-  height: 40px; /* Ajustar la altura del botón */
-  margin-top: 10px;
-  border-radius: 20px;
-  align-self: center;
-}
-
-/* Estilo de los placeholders */
-.form-control-custom::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-@media (max-width: 360px) {
-  .image-container {
-    display: none;
-  }
-  .form-control-custom,
-  .btn-custom {
-    background-color: #000;
-    color: #fff;
-    border-radius: 25px;
-    text-align: center;
-    width: 90%; /* Ajustar el ancho */
-    height: 50px; /* Ajustar la altura */
-    border: none; /* Remove default border */
-    font-size: 1.2em; /* Ajustar el tamaño de la fuente */
-  }
-  button.btn-custom {
-    width: 30%; /* Ajustar el ancho del botón */
-    height: 400px; /* Ajustar la altura del botón */
-    margin-top: 10px;
-    border-radius: 20px;
-    align-self: center;
-  }
-  textarea.form-control-custom {
-    resize: none;
-    width: 75%; /* Ajustar el ancho */
-    height: 100%; /* Ajustar la altura */
-  }
-}
-
-@media (max-width: 480px) {
-  .form-control-custom,
-  .btn-custom {
-    background-color: #000;
-    color: #fff;
-    border-radius: 25px;
-    text-align: center;
-    width: 90%; /* Ajustar el ancho */
-    height: 50px; /* Ajustar la altura */
-    border: none; /* Remove default border */
-    font-size: 1.2em; /* Ajustar el tamaño de la fuente */
-  }
-  button.btn-custom {
-    width: 30%; /* Ajustar el ancho del botón */
-    height: 400px; /* Ajustar la altura del botón */
-    margin-top: 10px;
-    border-radius: 20px;
-    align-self: center;
-  }
-  textarea.form-control-custom {
-    resize: none;
-    width: 75%; /* Ajustar el ancho */
-    height: 100%; /* Ajustar la altura */
-  }
-}
-
-@media (max-width: 991px) {
-  .img-fluid {
-    display: none;
-  }
-  button.btn.btn-custom.mx-auto {
-    width: 100px;
-    height: 50px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .img-fluid {
-    width: auto;
-    height: auto;
-    margin-left: 110px;
-    margin-bottom: 120px;
-    margin-right: 50px;
-  }
-  .form-control-custom,
-  .btn-custom {
-    background-color: #000;
-    color: #fff;
-    border-radius: 25px;
-    text-align: center;
-    width: 400px; /* Ajustar el ancho */
-    height: 50px; /* Ajustar la altura */
-    border: none; /* Remove default border */
-    font-size: 1.2em; /* Ajustar el tamaño de la fuente */
-  }
-
-  textarea.form-control-custom {
-    resize: none;
-    width: 400px; /* Ajustar el ancho */
-    height: auto; /* Ajustar la altura */
-  }
-}
+export default ContactForm;
