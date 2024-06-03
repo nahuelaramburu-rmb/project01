@@ -25,7 +25,7 @@ const Main = () => {
         <ContactForm />
         <div className="spacer"></div>
       </div>
-      <div className="social-bar">
+      <div className="social-bar" style={{ zIndex: 9999 }}>
         <SocialBar />
       </div>
     </div>

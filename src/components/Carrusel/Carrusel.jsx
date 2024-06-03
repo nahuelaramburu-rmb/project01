@@ -16,14 +16,15 @@ function Carrusel() {
       </div>
 
       <div>
-        <Marquee direction="right" speed={30} delay={3}>
+        <Marquee direction="left" speed={50} delay={5}>
           <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
-            <img
+          <img
               src={img1}
               alt="Partner 1"
               className="carrusel-image img-fluid"
               style={{ width: '200px', height: '200px', objectFit: 'cover' }}
             />
+
           </div>
           <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
             <img

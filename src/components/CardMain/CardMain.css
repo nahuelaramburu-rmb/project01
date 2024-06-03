@@ -1,3 +1,7 @@
+.esqredonda {
+  border-radius: 20px;
+}
+
 .flexb1 {
   display: flex;
   justify-content: center;
