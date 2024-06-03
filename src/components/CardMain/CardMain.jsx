@@ -24,7 +24,7 @@ export default function CardMain() {
           <img src={foto1} alt="Foto del Cliente" style={{ width: "90%" }} />
         </div>
 
-        <Carrusel />
+      <Carrusel />
       </div>
     
     </div>

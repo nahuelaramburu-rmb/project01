@@ -1,67 +1,160 @@
+/* Estilos personalizados para el formulario y los botones */
 .form-control-custom, .btn-custom {
+  background-color: #000;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  width: 75%; /* Ajustar el ancho */
+  height: 50px; /* Ajustar la altura */
+  border: none; /* Remove default border */
+  font-size: 1.2em; /* Ajustar el tamaño de la fuente */
+}
+
+/* Evitar cambios de color al enfocar */
+.form-control-custom:focus, .btn-custom:focus, 
+.form-control-custom:active, .btn-custom:active, 
+.form-control-custom:hover, .btn-custom:hover {
+  background-color: #000; /* Maintain black background */
+  color: #fff; /* Maintain white text color */
+  border: none; /* Remove border on focus and hover */
+  box-shadow: none; /* Remove shadow on focus */
+  outline: none; /* Remove outline */
+}
+
+textarea.form-control-custom {
+  resize: none;
+  width: 75%; /* Ajustar el ancho */
+  height: 100px; /* Ajustar la altura */
+}
+
+/* Estilo de la imagen */
+.img-fluid {
+  border-radius: 30px;
+}
+
+/* Estilo del botón */
+button.btn-custom {
+  width: 20%; /* Ajustar el ancho del botón */
+  height: 40px; /* Ajustar la altura del botón */
+  margin-top: 10px;
+  border-radius: 20px;
+  align-self: center;
+}
+
+/* Estilo de los placeholders */
+.form-control-custom::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Carrusel */
+.Carrusel {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.carrusel-title {
+  margin-bottom: 50px;
+}
+
+.carrusel-image-wrapper {
+  margin: 0px 30px;
+}
+
+.carrusel-image-wrapper img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 360px) {
+  .image-container {
+    display: none;
+  }
+  .form-control-custom, .btn-custom {
     background-color: #000;
     color: #fff;
-    border-radius: 10px; /* Adding border-radius */
+    border-radius: 25px;
     text-align: center;
-    width: 65%;
+    width: 90%; /* Ajustar el ancho */
+    height: 50px; /* Ajustar la altura */
+    border: none; /* Remove default border */
+    font-size: 1.2em; /* Ajustar el tamaño de la fuente */
   }
-  
-  
-  textarea.form-control-custom {
-    resize: none; /* Prevent resizing */
-    width: 65%;
-  
-  }
-  
-  .img-fluid {
-    border-radius: 20px; /* Adding border-radius to the image */
-  }
-  
-  
   button.btn-custom {
-    width: 50%; /* Half the size of the inputs */
-  }
-  
-  
-  /*Carousle*/
-  
-  /* Carrusel.css */
-  
-  .Carrusel {
-    margin-top: 50px;
-    text-align: center;
-  }
-  
-  .carrusel-title {
-    margin-bottom: 50px;
-  }
-  
-  .carrusel-image-wrapper {
-    margin: 0px 30px;
-  }
-  
-  .carrusel-image-wrapper img {
-    width: 100px; /* Ajusta este valor según el tamaño deseado */
-    height: 100px; /* Ajusta este valor según el tamaño deseado */
-    object-fit: contain; /* Asegura que la imagen se escale correctamente */
-  }
-  
-  
-  @media (max-width: 768px) {
-    .image-container {
-      display: none;
-    }
-  }
-  
-  /* Ensure button is centered */
-  button.btn-custom {
+    width: 30%; /* Ajustar el ancho del botón */
+    height: 400px; /* Ajustar la altura del botón */
     margin-top: 10px;
-    border-radius: 15px;
-    width: 30%; /* Half the size of the inputs */
-    align-self: center; /* Center the button */
+    border-radius: 20px;
+    align-self: center;
   }
-  
-  /* Placeholder color */
-  .form-control-custom::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* Make placeholders white with some transparency */
+  textarea.form-control-custom {
+    resize: none;
+    width: 75%; /* Ajustar el ancho */
+    height: 100%; /* Ajustar la altura */
   }
+}
+
+@media (max-width: 480px) {
+  .form-control-custom, .btn-custom {
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    width: 90%; /* Ajustar el ancho */
+    height: 50px; /* Ajustar la altura */
+    border: none; /* Remove default border */
+    font-size: 1.2em; /* Ajustar el tamaño de la fuente */
+  }
+  button.btn-custom {
+    width: 30%; /* Ajustar el ancho del botón */
+    height: 400px; /* Ajustar la altura del botón */
+    margin-top: 10px;
+    border-radius: 20px;
+    align-self: center;
+  }
+  textarea.form-control-custom {
+    resize: none;
+    width: 75%; /* Ajustar el ancho */
+    height: 100%; /* Ajustar la altura */
+  }
+}
+
+@media (max-width: 991px) {
+  .img-fluid{
+    display: none;
+  }
+  button.btn.btn-custom.mx-auto{
+    width: 100px;
+    height: 50px;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+  .img-fluid{
+    width: auto;
+    height: auto;
+    margin-left: 110px;
+    margin-bottom: 120px;
+    margin-right: 50px;
+  }
+  .form-control-custom, .btn-custom {
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    width: 400px; /* Ajustar el ancho */
+    height: 50px; /* Ajustar la altura */
+    border: none; /* Remove default border */
+    font-size: 1.2em; /* Ajustar el tamaño de la fuente */
+  }
+
+  textarea.form-control-custom {
+    resize: none;
+    width: 400px; /* Ajustar el ancho */
+    height: auto; /* Ajustar la altura */
+  }
+}
+

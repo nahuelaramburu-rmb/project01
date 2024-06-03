@@ -32,3 +32,5 @@
 # npm install reac-bootstrp
 
 # npm install react-fast-marquee
+
+#REVISAR LA @media (min-width: 768px) and (max-width: 991px) YA QUE LA IMAGEN ROMPE CON EL FORMULARIO, NO SE HACE RESPONSIVE
