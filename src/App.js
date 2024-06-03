@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Bio from "./components/Bio/Bio";
+import Carrusel from "./components/Carrusel/Carrusel";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/Bio" element={<Bio />} />
+          <Route path="/Clientes" element={<Carrusel />} />
         </Routes>
       </Router>
     </div>
