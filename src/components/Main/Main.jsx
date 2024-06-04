@@ -3,6 +3,7 @@ import CardMain from "../CardMain/CardMain";
 import SocialBar from "../SocialBar/SocialBar";
 import Carrusel from "../Carrusel/Carrusel";
 import ContactForm from "../ContactForm/ContactForm";
+import Bio from "../Bio/Bio";
 import "./Main.css";
 
 const Main = () => {
@@ -20,8 +21,9 @@ const Main = () => {
         <div className="spacer"></div>
       </div>
 
-      <div id="especializaciones" className="section-scroll">
+      <div id="bio" className="section-scroll">
         <h2>Especializaciones</h2>
+        <Bio />
         <div className="spacer"></div>
       </div>
 

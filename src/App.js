@@ -12,8 +12,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/Bio" element={<Bio />} />
-          <Route path="/Clientes" element={<Carrusel />} />
         </Routes>
       </Router>
     </div>
