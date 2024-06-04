@@ -16,7 +16,6 @@ const Main = () => {
       </div>
 
       <div id="clientes" className="section-scroll">
-        <h2>Clientes</h2>
         <Carrusel />
         <div className="spacer"></div>
       </div>
@@ -32,7 +31,7 @@ const Main = () => {
         <div className="spacer"></div>
       </div>
 
-      <div className="social-bar" style={{ zIndex: 9999 }}>
+      <div id="style={{ zIndex: 9999 }}">
         <SocialBar />
       </div>
     </div>
