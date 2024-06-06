@@ -8,7 +8,7 @@ export default function CardMain() {
     <div className="container ">
       <div
         className="row flexb1"
-        style={{ backgroundColor: "#eeeeee", padding: "5px" }}
+        style={{ backgroundColor: "#eeeeee", padding: "5px", borderRadius:"20px" }}
       >
         <div className="col-12 col-md-6 " align="center">
           <h1 className="borderfn">Ricardo Chiani</h1>

@@ -6,6 +6,7 @@ import { styled } from "@mui/material/styles";
 const DemoPaper = styled(Paper)(({ theme }) => ({
   width: "160px",
   height: "190px",
+  borderRadius: "20px",
   padding: theme.spacing(2),
   ...theme.typography.body2,
   textAlign: "center",

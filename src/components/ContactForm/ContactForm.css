@@ -1,7 +1,7 @@
 .form-control-custom, .btn-custom {
   background-color: #000;
   color: #fff;
-  border-radius: 10px; /* Adding border-radius */
+  border-radius: 20px;
   text-align: center;
   width: 75%;
   
@@ -9,7 +9,7 @@
 
 button.btn-custom {
   margin-top: 10px;
-  border-radius: 15px;
+  border-radius: 20px;
   width: 20%; 
   align-self: center; 
 }
