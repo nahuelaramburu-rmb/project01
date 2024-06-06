@@ -66,14 +66,6 @@ const Header = () => {
 
           <Nav.Link
             className="nav-link-text"
-            href="#newsection"
-            onClick={() => setExpanded(false)}
-          >
-            <span className="h3 font-weight-bold">NEW SECTION</span>
-          </Nav.Link>
-
-          <Nav.Link
-            className="nav-link-text"
             href="#experiencias"
             onClick={() => setExpanded(false)}
           >
