@@ -2,22 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
-.container-scroll {
-  width: 100%;
-  height: 100vh;
-  overflow-y: none;
-  scroll-snap-type: y mandatory;
-}
-
-.section-scroll {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+.sec-box {
+  text-align: center;
+  align-content: center;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  scroll-snap-align: start;
 }
 
 .margin-bottom {
@@ -33,6 +22,12 @@ html {
 
 .spacer {
   height: 300px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.minspacer {
+  height: 50px;
   width: 100%;
   background-color: #ffffff;
 }
