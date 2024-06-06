@@ -5,30 +5,35 @@ import Carrusel from "../Carrusel/Carrusel";
 import ContactForm from "../ContactForm/ContactForm";
 import Bio from "../Bio/Bio";
 import "./Main.css";
+import CardRow from "../CardExt/CardRow";
 
 const Main = () => {
   return (
-    <div className="container-scroll">
+    <div className="container">
       <div className="Row "></div>
-      <div id="inicio" className="section-scroll">
+      <div id="inicio" className="col-12">
         <CardMain />
-        <div className="spacer"></div>
+        <div className="minspacer"></div>
+      </div>
+      <div className="minspacer"></div>
+      <div id="inicio" className="col-12">
+        <CardRow />
+        <div className="minspacer"></div>
       </div>
 
-      <div id="clientes" className="section-scroll">
+      <div id="clientes" className="col-12">
         <Carrusel />
-        <div className="spacer"></div>
+        <div className="minspacer"></div>
       </div>
 
-      <div id="bio" className="section-scroll">
-        <h2>Especializaciones</h2>
+      <div id="bio" className="sec-box col-12">
+        <h2>Bio</h2>
         <Bio />
-        <div className="spacer"></div>
+        <div className="minspacer"></div>
       </div>
 
-      <div id="contacto" className="section-scroll margin-bottom">
+      <div id="contacto" className="col-12 margin-bottom">
         <ContactForm />
-        <div className="spacer"></div>
       </div>
 
       <div id="style={{ zIndex: 9999 }}">

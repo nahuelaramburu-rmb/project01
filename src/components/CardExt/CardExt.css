@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.card-container {
+  padding: 15px;
+}
+
+.cardrow-container {
+  margin: 15px;
+}
