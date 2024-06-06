@@ -3,7 +3,6 @@ import CardMain from "../CardMain/CardMain";
 import SocialBar from "../SocialBar/SocialBar";
 import Carrusel from "../Carrusel/Carrusel";
 import ContactForm from "../ContactForm/ContactForm";
-import Bio from "../Bio/Bio";
 import "./Main.css";
 import CardExtRow from "../CardExt/CardExtRow";
 import CardExpRow from "../CardExp/CardExpRow";
@@ -15,7 +14,7 @@ const Main = () => {
 
       <div id="inicio" className="col-12">
         <CardMain />
-        <div className="minspacer"></div>
+        <div className="spacer"></div>
       </div>
 
       <div className="minspacer"></div>
@@ -26,13 +25,11 @@ const Main = () => {
 
       <div id="clientes" className="col-12">
         <Carrusel />
-        <div className="minspacer"></div>
+        <div className="spacer"></div>
       </div>
-
-      <div id="bio" className="sec-box col-12">
-        <h2>Bio</h2>
-        <Bio />
-        <div className="minspacer"></div>
+      <div id="especializaciones" className="section-scroll">
+        <h2>Especializaciones</h2>
+        <div className="spacer"></div>
       </div>
 
       <div id="experiencias" className="sec-box col-12">
@@ -43,9 +40,9 @@ const Main = () => {
 
       <div id="contacto" className="col-12 margin-bottom">
         <ContactForm />
+        <div className="spacer"></div>
       </div>
-
-      <div id="style={{ zIndex: 9999 }}">
+      <div className="social-bar" style={{ zIndex: 9999 }}>
         <SocialBar />
       </div>
     </div>
