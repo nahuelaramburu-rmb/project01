@@ -1,11 +1,11 @@
-import { cardData } from "./CardData";
+import { cardExtData } from "./CardExtData";
 import CardExt from "./CardExt";
 import "./CardExt.css";
 
 export default function CardRow() {
   return (
     <div className="cardrow-container row">
-      {cardData.map(({ ImgSrc, CrdTitle, CrdText }) => (
+      {cardExtData.map(({ ImgSrc, CrdTitle, CrdText }) => (
         <CardExt ImgSrc={ImgSrc} CrdTitle={CrdTitle} CrdText={CrdText} />
       ))}
     </div>
