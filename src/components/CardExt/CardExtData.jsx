@@ -1,6 +1,6 @@
 import logo from "../../assets/logos/logo.jpg";
 
-export const cardData = [
+export const cardExtData = [
   {
     ImgSrc: logo,
     CrdTitle: "Titulo de la carta",
