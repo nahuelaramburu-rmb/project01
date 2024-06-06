@@ -267,7 +267,6 @@ export default function Bio() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <SocialBar />
     </div>
   );
 }

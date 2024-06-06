@@ -50,8 +50,7 @@ const Header = () => {
 
           <Nav.Link
             className="nav-link-text"
-            as={Link}
-            to="/bio"
+            href="#bio"
             onClick={() => setExpanded(false)}
           >
             <span className="h3 font-weight-bold">BIO</span>
@@ -59,8 +58,7 @@ const Header = () => {
 
           <Nav.Link
             className="nav-link-text"
-            as={Link}
-            to="clientes"
+            href="#clientes"
             onClick={() => setExpanded(false)}
           >
             <span className="h3 font-weight-bold">CLIENTES</span>
