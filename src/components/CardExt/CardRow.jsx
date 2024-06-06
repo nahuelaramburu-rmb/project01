@@ -2,6 +2,7 @@ import { cardData } from "./CardData";
 import CardExt from "./CardExt";
 import "./CardExt.css";
 
+
 export default function CardRow() {
   return (
     <div className="cardrow-container row">
