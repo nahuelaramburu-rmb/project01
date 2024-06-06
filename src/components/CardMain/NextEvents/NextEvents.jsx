@@ -7,8 +7,8 @@ import { styled } from "@mui/material/styles";
 
 
 const DemoPaper = styled(Paper)(({ theme }) => ({
-  width: "auto",
-  height: "auto",
+  width: "160px",
+  height: "190px",
   padding: theme.spacing(2),
   ...theme.typography.body2,
   textAlign: "center",
@@ -16,8 +16,8 @@ const DemoPaper = styled(Paper)(({ theme }) => ({
 
 export default function NextEvents() {
   return (
-    <Stack direction="row" spacing={4}>
-      <DemoPaper square={false} style={{borderRadius:"20px", height: "175px", width:"200px" }}>
+    <Stack direction="row" spacing={3}>
+      <DemoPaper square={false} style={{borderRadius:"20px", height: "175px", width:"200px"}}>
         <h3>La Plata</h3>
         <p>21 de mayo 19:00 hs</p>
         <br />

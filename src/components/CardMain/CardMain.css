@@ -9,3 +9,26 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 512px) {
+  .qpic {
+    height: 20px;
+    margin: 20px;
+  }
+  .align-pic-center {
+    align-self: center;
+  }
+}
+
+.borderfn {
+  font-weight: 700;
+  font-size: 65px;
+  color: rgba(128, 128, 128, 0.89);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(226, 193, 43);
+}
+.bordercard {
+  color: rgba(63, 61, 61, 0.89);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(226, 193, 43);
+}
