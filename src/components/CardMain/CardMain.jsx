@@ -1,7 +1,4 @@
-import foto1 from "../../assets/imagenes/foto1.jpg";
-
 import fotochiani1 from "../../assets/imagenes/fotochiani1.png";
-import Carrusel from "../Carrusel/Carrusel";
 import NextEvents from "./NextEvents/NextEvents";
 import "./CardMain.css";
 
@@ -27,7 +24,7 @@ export default function CardMain() {
           <img
             src={fotochiani1}
             alt="Foto del Cliente"
-            style={{ width: "70%", borderRadius: "50px" }}
+            style={{ width: "70%", borderRadius: "20px" }}
           />
         </div>
       </div>
