@@ -8,7 +8,7 @@ import { CardActionArea } from "@mui/material";
 export default function CardExt({ ImgSrc, CrdTitle, CrdText }) {
   return (
     <div className="card-container col-sm-4">
-      <Card sx={{ maxWidth: 450 }}>
+      <Card sx={{ maxWidth: 450 }} style={{borderRadius:"20px",}}>
         <CardActionArea>
           <CardMedia
             component="img"
