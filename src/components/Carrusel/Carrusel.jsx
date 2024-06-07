@@ -1,16 +1,15 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import img1 from "../../assets/imagenes/c1.png";
-import img2 from "../../assets/imagenes/c2.png";
+import img2 from "../../assets/imagenes/c2.jpg";
 import img3 from "../../assets/imagenes/c3.png";
 import img4 from "../../assets/imagenes/c4.png";
-import img5 from "../../assets/imagenes/c5.jpeg";
-import img6 from "../../assets/imagenes/c6.jpeg";
+import img5 from "../../assets/imagenes/c5.png";
+import img6 from "../../assets/imagenes/c6.png";
 import img7 from "../../assets/imagenes/c7.jpeg";
 import img8 from "../../assets/imagenes/c8.jpeg";
 import img9 from "../../assets/imagenes/c9.jpeg";
 import img10 from "../../assets/imagenes/c10.jpeg";
-import img11 from "../../assets/imagenes/c11.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Carrusel.css";
 import MediaQuery from "react-responsive";
@@ -146,18 +145,6 @@ function Carrusel() {
                   }}
                 />
               </div>
-              <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
-                <img
-                  src={img11}
-                  alt="Partner 3"
-                  className="carrusel-image img-fluid"
-                  style={{
-                    width: "100px",
-                    height: "100px",
-                    objectFit: "cover",
-                  }}
-                />
-              </div>
             </Marquee>
           </div>
         </div>
@@ -287,18 +274,6 @@ function Carrusel() {
                     style={{
                       width: "200px",
                       height: "200px",
-                      objectFit: "cover",
-                    }}
-                  />
-                </div>
-                <div className="carrusel-image-wrapper mx-3 d-flex justify-content-center align-items-center">
-                  <img
-                    src={img11}
-                    alt="Partner 3"
-                    className="carrusel-image img-fluid"
-                    style={{
-                      width: "100px",
-                      height: "100px",
                       objectFit: "cover",
                     }}
                   />
