@@ -1,0 +1,37 @@
+.whatsapp-button {
+    z-index: 1;
+    border-radius: 50%;
+  }
+  
+  .whatsapp-button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid transparent;
+    border-left: 35px solid #48BB78; 
+    transform: rotate(0deg);
+    z-index: -1;
+  }
+  
+  .whatsapp-button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-right: 35px solid #48BB78;
+    transform: rotate( 0deg);
+    z-index: -1;
+  }
+
+  @media (max-width: 640px) {
+    .whatsapp-button::before,
+    .whatsapp-button::after {
+      display: none;
+    }
+  }

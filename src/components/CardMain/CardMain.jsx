@@ -2,11 +2,13 @@ import fotochiani from "../../assets/imagenes/fotochiani.png";
 import fotochiani1 from "../../assets/imagenes/fotochiani1.png";
 import NextEvents from "./NextEvents/NextEvents";
 import MediaQuery from "react-responsive";
+import Whatsapp from "../WhatsApp/WhatsApp"
 import "./CardMain.css";
 
 export default function CardMain() {
   return (
     <div className="container ">
+      <WhatsApp/>
       <div
         className="row flexb1"
         style={{
