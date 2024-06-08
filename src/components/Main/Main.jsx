@@ -6,7 +6,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import Bio from "../Bio/Bio";
 import "./Main.css";
 import CardExtRow from "../CardExt/CardExtRow";
-import CardExpRow from "../CardExp/CardExpRow";
+import CarruselExp from "../CardExp/CarruselExp";
 
 const Main = () => {
   return (
@@ -24,11 +24,6 @@ const Main = () => {
         <div className="minspacer"></div>
       </div>
 
-      <div id="clientes" className="col-12">
-        <Carrusel />
-        <div className="minspacer"></div>
-      </div>
-
       <div id="bio" className="sec-box col-12">
         <h2>Bio</h2>
         <Bio />
@@ -37,12 +32,17 @@ const Main = () => {
 
       <div id="experiencias" className="sec-box col-12">
         <h2>EXPERIENCIAS</h2>
-        <CardExpRow />
+        <CarruselExp />
         <div className="minspacer"></div>
       </div>
 
       <div id="contacto" className="col-12 margin-bottom">
         <ContactForm />
+      </div>
+
+      <div id="clientes" className="col-12">
+        <Carrusel />
+        <div className="minspacer"></div>
       </div>
 
       <div id="style={{ zIndex: 9999 }}">

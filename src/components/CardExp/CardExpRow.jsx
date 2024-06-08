@@ -6,7 +6,9 @@ export default function CardExpRow() {
   return (
     <div className="cardrow-container row">
       {cardExpData.map(({ ImgSrc, CrdTitle, CrdText }) => (
-        <CardExp ImgSrc={ImgSrc} CrdTitle={CrdTitle} CrdText={CrdText} />
+        <div className="col-sm-4">
+          <CardExp ImgSrc={ImgSrc} CrdTitle={CrdTitle} CrdText={CrdText} />
+        </div>
       ))}
     </div>
   );

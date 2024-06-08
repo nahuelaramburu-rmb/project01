@@ -1,3 +1,4 @@
+import fotochiani from "../../assets/imagenes/fotochiani.png";
 import fotochiani1 from "../../assets/imagenes/fotochiani1.png";
 import NextEvents from "./NextEvents/NextEvents";
 import MediaQuery from "react-responsive";
@@ -8,7 +9,11 @@ export default function CardMain() {
     <div className="container ">
       <div
         className="row flexb1"
-        style={{ backgroundColor: "#eeeeee", padding: "5px", borderRadius:"20px" }}
+        style={{
+          backgroundColor: "#eeeeee",
+          padding: "5px",
+          borderRadius: "20px",
+        }}
       >
         <div className="col-12 col-md-6 " align="center">
           <h1 className="borderfn">Ricardo Chiani</h1>
@@ -41,7 +46,7 @@ export default function CardMain() {
           <div className="col-12 col-md-6 m-auto justify-content-center">
             <img
               className="aling-pic-center"
-              src={fotochiani1}
+              src={fotochiani}
               alt="Foto del Cliente"
               style={{ width: "100%", borderRadius: "50px" }}
             />
