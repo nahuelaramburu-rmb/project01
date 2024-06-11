@@ -22,10 +22,6 @@ const Main = () => {
       </div>
 
       <div className="minspacer"></div>
-      <div id="newsection" className="col-12">
-        <CardExtRow />
-        <div className="minspacer"></div>
-      </div>
 
       <div id="bio" className="sec-box col-12">
         <h2>Bio</h2>
