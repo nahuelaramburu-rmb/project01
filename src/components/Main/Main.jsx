@@ -7,7 +7,8 @@ import Bio from "../Bio/Bio";
 import "./Main.css";
 import CardExtRow from "../CardExt/CardExtRow";
 import CarruselExp from "../CardExp/CarruselExp";
-import WhatsApp from "../WhatsApp/WhatsApp"
+import WhatsApp from "../WhatsApp/WhatsApp";
+import Slider1Comp from "../Slider1/Slider1Comp";
 
 const Main = () => {
   return (
@@ -16,7 +17,7 @@ const Main = () => {
 
       <div id="inicio" className="col-12">
         <CardMain />
-        <WhatsApp/>
+        <WhatsApp />
         <div className="minspacer"></div>
       </div>
 

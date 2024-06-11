@@ -2,6 +2,7 @@ import fotochiani from "../../assets/imagenes/fotochiani.png";
 import fotochiani1 from "../../assets/imagenes/fotochiani1.png";
 import NextEvents from "./NextEvents/NextEvents";
 import MediaQuery from "react-responsive";
+import Slider1Comp from "../Slider1/Slider1Comp";
 import "./CardMain.css";
 
 export default function CardMain() {
@@ -42,7 +43,7 @@ export default function CardMain() {
           </div>
         </MediaQuery>
 
-        <MediaQuery minWidth={513}>
+        {/* <MediaQuery minWidth={513}>
           <div className="col-12 col-md-6 m-auto justify-content-center">
             <img
               className="aling-pic-center"
@@ -50,6 +51,14 @@ export default function CardMain() {
               alt="Foto del Cliente"
               style={{ width: "100%", borderRadius: "50px" }}
             />
+          </div>
+        </MediaQuery> */}
+
+        <MediaQuery minWidth={513}>
+          <div className="col-12 col-md-6 m-auto justify-content-center">
+            <div className="">
+              <Slider1Comp />
+            </div>
           </div>
         </MediaQuery>
       </div>
