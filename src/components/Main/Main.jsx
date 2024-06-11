@@ -5,10 +5,8 @@ import Carrusel from "../Carrusel/Carrusel";
 import ContactForm from "../ContactForm/ContactForm";
 import Bio from "../Bio/Bio";
 import "./Main.css";
-import CardExtRow from "../CardExt/CardExtRow";
 import CarruselExp from "../CardExp/CarruselExp";
 import WhatsApp from "../WhatsApp/WhatsApp";
-import Slider1Comp from "../Slider1/Slider1Comp";
 
 const Main = () => {
   return (

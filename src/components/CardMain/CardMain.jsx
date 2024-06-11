@@ -1,4 +1,3 @@
-import fotochiani from "../../assets/imagenes/fotochiani.png";
 import fotochiani1 from "../../assets/imagenes/fotochiani1.png";
 import NextEvents from "./NextEvents/NextEvents";
 import MediaQuery from "react-responsive";
