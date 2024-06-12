@@ -17,6 +17,12 @@ export default function Bio() {
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+          backgroundColor: "#f0f0f0",
+        }}
       >
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
@@ -41,6 +47,12 @@ export default function Bio() {
       <Accordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+          backgroundColor: "#f0f0f0",
+        }}
       >
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
@@ -77,6 +89,12 @@ export default function Bio() {
       <Accordion
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+          backgroundColor: "#f0f0f0",
+        }}
       >
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
@@ -105,6 +123,12 @@ export default function Bio() {
       <Accordion
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+          backgroundColor: "#f0f0f0",
+        }}
       >
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
@@ -133,6 +157,12 @@ export default function Bio() {
       <Accordion
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+          backgroundColor: "#f0f0f0",
+        }}
       >
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
@@ -165,6 +195,12 @@ export default function Bio() {
       <Accordion
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+          backgroundColor: "#f0f0f0",
+        }}
       >
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
@@ -205,6 +241,12 @@ export default function Bio() {
       <Accordion
         expanded={expanded === "panel7"}
         onChange={handleChange("panel7")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+          backgroundColor: "#f0f0f0",
+        }}
       >
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
