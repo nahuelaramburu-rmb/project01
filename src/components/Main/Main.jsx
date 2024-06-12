@@ -5,9 +5,8 @@ import Carrusel from "../Carrusel/Carrusel";
 import ContactForm from "../ContactForm/ContactForm";
 import Bio from "../Bio/Bio";
 import "./Main.css";
-import CardExtRow from "../CardExt/CardExtRow";
 import CarruselExp from "../CardExp/CarruselExp";
-import WhatsApp from "../WhatsApp/WhatsApp"
+import WhatsApp from "../WhatsApp/WhatsApp";
 
 const Main = () => {
   return (
@@ -16,15 +15,11 @@ const Main = () => {
 
       <div id="inicio" className="col-12">
         <CardMain />
-        <WhatsApp/>
+        <WhatsApp />
         <div className="minspacer"></div>
       </div>
 
       <div className="minspacer"></div>
-      <div id="newsection" className="col-12">
-        <CardExtRow />
-        <div className="minspacer"></div>
-      </div>
 
       <div id="bio" className="sec-box col-12">
         <h2>Bio</h2>
