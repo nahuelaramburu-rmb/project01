@@ -1,4 +1,4 @@
-import fotochiani1 from "../../assets/imagenes/fotochiani1.png";
+// import fotochiani1 from "../../assets/imagenes/fotochiani1.png";
 import NextEvents from "./NextEvents/NextEvents";
 import MediaQuery from "react-responsive";
 import Slider1Comp from "../Slider1/Slider1Comp";
@@ -30,7 +30,7 @@ export default function CardMain() {
         </div>
         <MediaQuery maxWidth={512}>
           <div className="qpic"></div>
-          <div
+          {/* <div
             align="center"
             className="col-12 col-md-6 m-auto justify-content-center"
           >
@@ -39,6 +39,9 @@ export default function CardMain() {
               alt="Foto del Cliente"
               style={{ width: "100%", borderRadius: "50px" }}
             />
+          </div> */}
+          <div className="">
+            <Slider1Comp />
           </div>
         </MediaQuery>
 

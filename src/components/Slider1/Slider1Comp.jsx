@@ -1,5 +1,5 @@
 import "./Slider1.css";
-import foto1 from "../../assets/imgExp/Slider1.png";
+import foto1 from "../../assets/imgExp/Slider1.jpeg";
 import foto2 from "../../assets/imgExp/Slider2.jpeg";
 import foto3 from "../../assets/imgExp/Slider3.jpeg";
 import foto4 from "../../assets/imgExp/Slider4.jpeg";
