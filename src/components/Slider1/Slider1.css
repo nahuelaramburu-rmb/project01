@@ -20,15 +20,29 @@
   display: block;
 }
 
-.slider-container {
-  width: 100%;
-  width: 820px;
-  height: 450px;
-  display: flex;
-  gap: 10px;
-  margin-inline: 50px;
+@media only screen and (max-width: 412px) {
+  .slider-box {
+    height: 350px;
+  }
+  .slider-container {
+    width: 100%;
+    width: 400px;
+    height: 330px;
+    display: flex;
+    gap: 10px;
+    margin-inline: 50px;
+  }
 }
-
+@media only screen and (min-width: 413px) {
+  .slider-container {
+    width: 100%;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    gap: 10px;
+    margin-inline: 50px;
+  }
+}
 .slider-card {
   min-width: 5px;
   height: auto;
