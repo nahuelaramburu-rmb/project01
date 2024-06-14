@@ -16,7 +16,7 @@ const CustomAccordionSummary = styled(AccordionSummary)({
 });
 
 const CustomAccordionDetails = styled(AccordionDetails)({
-  color: "gold", // Color del texto de los detalles
+  color: "goldenrod", // Color del texto de los detalles
 });
 
 export default function Bio() {
@@ -56,7 +56,7 @@ export default function Bio() {
         </CustomAccordionDetails>
       </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
         sx={{
@@ -95,7 +95,7 @@ export default function Bio() {
             </p>
           </Typography>
         </CustomAccordionDetails>
-      </Accordion>
+      </CustomAccordion>
 
       <CustomAccordion
         expanded={expanded === "panel3"}
