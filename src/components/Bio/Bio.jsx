@@ -3,8 +3,21 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
 // import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+
+const CustomAccordion = styled(Accordion)({
+  backgroundColor: "black", // Color del texto de los detalles
+});
+
+const CustomAccordionSummary = styled(AccordionSummary)({
+  color: "gold", // Color del resumen del acordeón
+});
+
+const CustomAccordionDetails = styled(AccordionDetails)({
+  color: "gold", // Color del texto de los detalles
+});
 
 export default function Bio() {
   const [expanded, setExpanded] = useState(false);
@@ -14,17 +27,16 @@ export default function Bio() {
   };
   return (
     <div className="container">
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
         sx={{
           marginBottom: 3,
           borderRadius: 5,
           overflow: "hidden",
-          backgroundColor: "#f0f0f0",
         }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel1-content"
           id="panel1-header"
@@ -32,8 +44,8 @@ export default function Bio() {
           <Typography>
             <h3>Quién soy?</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
             <p>
               Soy un profesional comprometido en asistir y acompañar a las
@@ -41,8 +53,8 @@ export default function Bio() {
               y con propósito.
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
       <Accordion
         expanded={expanded === "panel2"}
@@ -51,10 +63,9 @@ export default function Bio() {
           marginBottom: 3,
           borderRadius: 5,
           overflow: "hidden",
-          backgroundColor: "#f0f0f0",
         }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
           id="panel2-header"
@@ -62,8 +73,8 @@ export default function Bio() {
           <Typography>
             <h3>Mi historia</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
             <p>
               Durante 36 años, fui violinista en la Orquesta del Teatro
@@ -83,20 +94,19 @@ export default function Bio() {
               del proceso de caminar hacia el éxito.
             </p>
           </Typography>
-        </AccordionDetails>
+        </CustomAccordionDetails>
       </Accordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
         sx={{
           marginBottom: 3,
           borderRadius: 5,
           overflow: "hidden",
-          backgroundColor: "#f0f0f0",
         }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
@@ -104,8 +114,8 @@ export default function Bio() {
           <Typography>
             <h3>Frases que me identifican</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
             <p>
               Cuida tus pensamientos, porque se convertirán en tus palabras.
@@ -118,19 +128,18 @@ export default function Bio() {
               haciendo lo imposible. San Francisco de Asís
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
+        </CustomAccordionDetails>
+      </CustomAccordion>
+      <CustomAccordion
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
         sx={{
           marginBottom: 3,
           borderRadius: 5,
           overflow: "hidden",
-          backgroundColor: "#f0f0f0",
         }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel4-content"
           id="panel4-header"
@@ -138,8 +147,8 @@ export default function Bio() {
           <Typography>
             <h3>Mi misión</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
             <p>
               Es facilitar procesos de transformaciones profundas y duraderas, a
@@ -151,20 +160,19 @@ export default function Bio() {
               alcanzar sus metas y sueños.
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
         sx={{
           marginBottom: 3,
           borderRadius: 5,
           overflow: "hidden",
-          backgroundColor: "#f0f0f0",
         }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel5-content"
           id="panel5-header"
@@ -172,8 +180,8 @@ export default function Bio() {
           <Typography>
             <h3>Mi Visión</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
             <p>
               &quot;Crear una comunidad global de individuos y organizaciones
@@ -189,20 +197,19 @@ export default function Bio() {
               duradero en la sociedad.&quot;
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
         sx={{
           marginBottom: 3,
           borderRadius: 5,
           overflow: "hidden",
-          backgroundColor: "#f0f0f0",
         }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel6-content"
           id="panel6-header"
@@ -210,8 +217,8 @@ export default function Bio() {
           <Typography>
             <h3>Formación académica</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
             <ul>
               <li>
@@ -235,20 +242,19 @@ export default function Bio() {
               <br />
             </ul>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel7"}
         onChange={handleChange("panel7")}
         sx={{
           marginBottom: 3,
           borderRadius: 5,
           overflow: "hidden",
-          backgroundColor: "#f0f0f0",
         }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel7-content"
           id="panel7-header"
@@ -256,8 +262,8 @@ export default function Bio() {
           <Typography>
             <h3>Beneficios de un proceso de coaching y PNL</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
             <ul style={{ listStyleType: "none" }}>
               <li>
@@ -307,8 +313,8 @@ export default function Bio() {
               <br />
             </ul>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
     </div>
   );
 }
