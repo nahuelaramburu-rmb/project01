@@ -64,8 +64,8 @@ textarea.form-control-custom {
 .form-control-custom:hover,
 .btn-custom:hover {
   background-color: #000;
-  color: #fff;
-  border: white solid 1px;
+  color: gold;
+  border: gold solid 1px;
   box-shadow: none;
   outline: none;
 }

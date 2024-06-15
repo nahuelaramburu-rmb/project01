@@ -15,6 +15,7 @@ import img7 from "../../assets/imagenes/c7.jpeg";
 import img8 from "../../assets/imagenes/c8.jpeg";
 import img9 from "../../assets/imagenes/c9.jpeg";
 import img10 from "../../assets/imagenes/c10.jpeg";
+import img11 from "../../assets/imagenes/imagen.png"
 
 function Carrusel() {
   const images = [
@@ -42,6 +43,7 @@ function Carrusel() {
             </Marquee>
           </div>
         </div>
+    
       </MediaQuery>
       <MediaQuery minWidth={513}>
         <div className="Carrusel">
@@ -54,6 +56,10 @@ function Carrusel() {
               </Marquee>
             </div>
           </div>
+        </div>
+        <div className="minspacer"></div>
+        <div>
+          <img src={img11} alt="" />
         </div>
       </MediaQuery>
     </div>
