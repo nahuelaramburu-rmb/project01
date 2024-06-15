@@ -1,7 +1,7 @@
 .form-control-custom,
 .btn-custom {
   background-color: #000;
-  color: #fff;
+  color: gold;
   border-radius: 20px;
   text-align: center;
   width: 75%;
@@ -24,8 +24,10 @@ textarea.form-control-custom {
 }
 
 .form-control-custom::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: gold !important
 }
+
+
 
 @media (max-width: 768px) {
   .image-container {

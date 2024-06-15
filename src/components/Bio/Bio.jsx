@@ -19,6 +19,9 @@ const CustomAccordionDetails = styled(AccordionDetails)({
   color: "goldenrod", // Color del texto de los detalles
 });
 
+
+
+
 export default function Bio() {
   const [expanded, setExpanded] = useState(false);
 
@@ -36,14 +39,17 @@ export default function Bio() {
           overflow: "hidden",
         }}
       >
+  
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{color:"gold"}} ExpandIconDetails/>}
           aria-controls="panel1-content"
           id="panel1-header"
         >
+         
           <Typography>
             <h3>Quién soy?</h3>
           </Typography>
+          
         </CustomAccordionSummary>
         <CustomAccordionDetails>
           <Typography>
@@ -66,7 +72,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{color:"gold"}}/>}
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -107,7 +113,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{color:"gold"}}/>}
           aria-controls="panel3-content"
           id="panel3-header"
         >
@@ -140,7 +146,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{color:"gold"}} />}
           aria-controls="panel4-content"
           id="panel4-header"
         >
@@ -173,7 +179,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{color:"gold"}} />}
           aria-controls="panel5-content"
           id="panel5-header"
         >
@@ -210,7 +216,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{color:"gold"}}/>}
           aria-controls="panel6-content"
           id="panel6-header"
         >
@@ -255,7 +261,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{color:"gold"}} />}
           aria-controls="panel7-content"
           id="panel7-header"
         >
