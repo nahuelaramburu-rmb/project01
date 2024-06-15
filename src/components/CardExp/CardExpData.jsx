@@ -19,47 +19,47 @@ export const cardExpData = [
   {
     ImgSrc: img01,
     CrdTitle: "Titulo de la Experiencia",
-    CrdText: "Texto descriptovo de la Experiencia",
+    CrdText: "Texto descriptivo de la Experiencia",
   },
   {
     ImgSrc: img02,
     CrdTitle: "Titulo de la Experiencia",
-    CrdText: "Texto descriptovo de la Experiencia",
+    CrdText: "Texto descriptivo de la Experiencia",
   },
   {
     ImgSrc: img03,
     CrdTitle: "Titulo de la Experiencia",
-    CrdText: "Texto descriptovo de la Experiencia",
+    CrdText: "Texto descriptivo de la Experiencia",
   },
   {
     ImgSrc: img04,
     CrdTitle: "Titulo de la Experiencia",
-    CrdText: "Texto descriptovo de la Experiencia",
+    CrdText: "Texto descriptivo de la Experiencia",
   },
   {
     ImgSrc: img05,
     CrdTitle: "Titulo de la Experiencia",
-    CrdText: "Texto descriptovo de la Experiencia",
+    CrdText: "Texto descriptivo de la Experiencia",
   },
   {
     ImgSrc: img06,
     CrdTitle: "Titulo de la Experiencia",
-    CrdText: "Texto descriptovo de la Experiencia",
+    CrdText: "Texto descriptivo de la Experiencia",
   },
   {
     ImgSrc: img07,
     CrdTitle: "Titulo de la Experiencia",
-    CrdText: "Texto descriptovo de la Experiencia",
+    CrdText: "Texto descriptivo de la Experiencia",
   },
   {
     ImgSrc: img08,
     CrdTitle: "Titulo de la Experiencia",
-    CrdText: "Texto descriptovo de la Experiencia",
+    CrdText: "Texto descriptivo de la Experiencia",
   },
   {
     ImgSrc: img09,
     CrdTitle: "Titulo de la Experiencia",
-    CrdText: "Texto descriptovo de la Experiencia",
+    CrdText: "Texto descriptivo de la Experiencia",
   },
   {
     ImgSrc: img10,

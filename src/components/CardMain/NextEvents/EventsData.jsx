@@ -1,6 +1,6 @@
 export const eventsData = [
   {
-    ciudad1: "La Palta",
+    ciudad1: "La Plata",
     fecha1: "12/7/2024",
     lugar1: "Estadio Unico",
     ciudad2: "Quilmes",

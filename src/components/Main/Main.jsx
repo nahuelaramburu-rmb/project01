@@ -20,30 +20,55 @@ const Main = () => {
 
       <div className="minspacer"></div>
 
-      <div id="bio" className="sec-box col-12">
-        <h2>Bio</h2>
-        <Bio />
+      <div id="bio">
+        <div className="sec-title col-12">
+          <h2>BIO</h2>
+        </div>
+
+        <div className="sec-box col-12">
+          <div className="minspacer"></div>
+          <Bio />
+          <div className="minspacer"></div>
+        </div>
       </div>
 
       <div className="minspacer"></div>
 
-      <div id="experiencias" className="sec-box col-12">
-        <h2>EXPERIENCIAS</h2>
-        <CarruselExp />
+      <div id="experiencias">
+        <div className="sec-title col-12">
+          <h2>EXPERIENCIAS</h2>
+        </div>
+
+        <div className="sec-box col-12 ">
+          <CarruselExp />
+        </div>
       </div>
 
       <div className="minspacer"></div>
 
-      <div id="contacto" className="col-12 margin-bottom">
-        <ContactForm />
+      <div id="contacto">
+        <div className="sec-title col-12">
+          <h2>CONTACTO</h2>
+        </div>
+
+        <div className="col-12 margin-bottom">
+          <ContactForm />
+        </div>
       </div>
 
       <div className="minspacer"></div>
 
-      <div id="clientes" className="col-12">
-        <Carrusel />
-        <div className="minspacer"></div>
+      <div id="clientes">
+        <div className="sec-title col-12">
+          <h2>PARTNERS</h2>
+        </div>
+
+        <div className="col-12">
+          <Carrusel />
+        </div>
       </div>
+
+      <div className="minspacer"></div>
 
       <div id="style={{ zIndex: 9999 }}">
         <SocialBar />

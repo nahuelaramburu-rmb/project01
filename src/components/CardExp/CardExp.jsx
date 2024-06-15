@@ -21,14 +21,14 @@ export default function CardExp({ ImgSrc, CrdTitle, CrdText }) {
               image={`${ImgSrc}`}
               alt="img src"
             />
-            <CardContent>
+            {/* <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {CrdTitle}
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 {CrdText}
               </Typography>
-            </CardContent>
+            </CardContent> */}
           </CardActionArea>
         </Card>
       </MediaQuery>
@@ -36,7 +36,7 @@ export default function CardExp({ ImgSrc, CrdTitle, CrdText }) {
       <MediaQuery minWidth={513}>
         <Card
           sx={{ maxWidth: "800" }}
-          style={{ borderRadius: "100px", backgroundColor: "#f0f0f0" }}
+          style={{ borderRadius: "30px", backgroundColor: "grey" }}
         >
           <CardActionArea>
             <CardMedia
@@ -45,14 +45,14 @@ export default function CardExp({ ImgSrc, CrdTitle, CrdText }) {
               image={`${ImgSrc}`}
               alt="img src"
             />
-            <CardContent>
+            {/* <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {CrdTitle}
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 {CrdText}
               </Typography>
-            </CardContent>
+            </CardContent> */}
           </CardActionArea>
         </Card>
       </MediaQuery>

@@ -6,7 +6,7 @@ import "./CardMain.css";
 
 export default function CardMain() {
   return (
-    <div className="container ">
+    <div className="container">
       <div className="row flexb1">
         <div className="col-12 col-md-6 " align="center">
           <h1 className="titlestyle">Ricardo Chiani</h1>

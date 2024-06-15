@@ -45,7 +45,7 @@ export default function CarruselExp() {
         <span className="visually-hidden">Next</span>
       </button>
       <img
-        class="mlogo  position-absolute bottom-0 end-0 m-5"
+        className="mlogo  position-absolute bottom-0 end-0 m-5"
         src={logo}
         alt="logo"
       />
