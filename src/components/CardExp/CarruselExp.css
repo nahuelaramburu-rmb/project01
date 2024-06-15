@@ -8,6 +8,10 @@
   border-radius: 50%;
 }
 
+.carousel-inner{
+  border-radius: 27px;
+}
+
 @media only screen and (min-width: 413px) {
   .mlogo {
     width: 100px;

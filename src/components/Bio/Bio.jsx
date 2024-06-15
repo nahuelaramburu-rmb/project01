@@ -38,7 +38,9 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={
+            <ArrowDropDownIcon style={{ color: "gold" }} ExpandIconDetails />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
         >
@@ -67,7 +69,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -108,7 +110,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
@@ -141,7 +143,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel4-content"
           id="panel4-header"
         >
@@ -174,7 +176,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel5-content"
           id="panel5-header"
         >
@@ -211,7 +213,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel6-content"
           id="panel6-header"
         >
@@ -256,16 +258,16 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel7-content"
           id="panel7-header"
         >
           <Typography>
-            <h3>Beneficios de un proceso de coaching y PNL</h3>
+            <h3>Beneficios de un proceso de coaching y PNL:</h3>
           </Typography>
         </CustomAccordionSummary>
         <CustomAccordionDetails>
-          <Typography>
+          <Typography className="justify">
             <ul style={{ listStyleType: "none" }}>
               <li>
                 Convertirse en un observador más consciente de uno mismo y del
