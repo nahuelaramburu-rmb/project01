@@ -34,10 +34,6 @@ function Carrusel() {
     <div>
       <MediaQuery maxWidth={512}>
         <div className="Carrusel">
-          <div className="carrusel-title">
-            <h1>Partners</h1>
-          </div>
-
           <div>
             <Marquee direction="left" speed={100} delay={1}>
               {images.map((image, index) => (
@@ -50,10 +46,6 @@ function Carrusel() {
       <MediaQuery minWidth={513}>
         <div className="Carrusel">
           <div className="glassT">
-            <div className="carrusel-title">
-              <h1 className="animacion">Partners</h1>
-            </div>
-
             <div>
               <Marquee direction="left" speed={110} delay={1}>
                 {images.map((image, index) => (
