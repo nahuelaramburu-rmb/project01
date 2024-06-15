@@ -3,8 +3,22 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
 // import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import "./Bio.css";
+
+const CustomAccordion = styled(Accordion)({
+  backgroundColor: "black", // Color del texto de los detalles
+});
+
+const CustomAccordionSummary = styled(AccordionSummary)({
+  color: "gold", // Color del resumen del acordeón
+});
+
+const CustomAccordionDetails = styled(AccordionDetails)({
+  color: "goldenrod", // Color del texto de los detalles
+});
 
 export default function Bio() {
   const [expanded, setExpanded] = useState(false);
@@ -14,11 +28,16 @@ export default function Bio() {
   };
   return (
     <div className="container">
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel1-content"
           id="panel1-header"
@@ -26,33 +45,38 @@ export default function Bio() {
           <Typography>
             <h3>Quién soy?</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
+          <Typography className="justify">
             <p>
               Soy un profesional comprometido en asistir y acompañar a las
               personas, empresas y organizaciones a que vivan una vida inspirada
               y con propósito.
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
           id="panel2-header"
         >
           <Typography>
-            <h3>Mi historia</h3>
+            <h3>Mi historia:</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
+          <Typography className="justify">
             <p>
               Durante 36 años, fui violinista en la Orquesta del Teatro
               Argentino de La Plata, Buenos Aires, Argentina. Desde una edad
@@ -66,117 +90,137 @@ export default function Bio() {
               Implementando estas herramientas tanto en mi vida personal como en
               la de mis alumnos de violín, y en la asistencia a personas en sus
               vidas personales y profesionales, confirmé que el cambio es
-              posible. Hoy me dedico a acompañar a personas, empresas y
+              posible. Hoy, me dedico a acompañar a personas, empresas y
               organizaciones en el logro de sus objetivos, mientras disfrutan
               del proceso de caminar hacia el éxito.
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
           <Typography>
-            <h3>Frases que me identifican</h3>
+            <h3>Frases que me identifican:</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
+          <Typography className="justify">
             <p>
               Cuida tus pensamientos, porque se convertirán en tus palabras.
               Cuida tus palabras, porque se convertirán en tus actos. Cuida tus
-              actos, porque convertirán en tus hábitos. Cuida tus hábitos,
-              porque se convertirán en tu destino. Gandhi.
+              actos, porque se convertirán en tus hábitos. Cuida tus hábitos,
+              porque se convertirán en tu destino. - Gandhi.
             </p>
             <p>
-              Comienza haciendo lo necesario, luego lo posible y terminaras
-              haciendo lo imposible. San Francisco de Asís
+              Comienza haciendo lo necesario, luego lo posible, y terminarás
+              haciendo lo imposible. - San Francisco de Asís.
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
+        </CustomAccordionDetails>
+      </CustomAccordion>
+      <CustomAccordion
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel4-content"
           id="panel4-header"
         >
           <Typography>
-            <h3>Mi misión</h3>
+            <h3>Mi misión:</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
+          <Typography className="justify">
             <p>
-              Es facilitar procesos de transformaciones profundas y duraderas, a
-              personas, empresas y organizaciones de todo el mundo, para
-              maximizar su potencial, logrando resultados extraordinarios y
-              viviendo vidas plenas y significativas. Enseñando principios
-              universales y estrategias efectivas, cultivando el liderazgo,
-              integridad y excelencia personal y profesional, para que puedan
-              alcanzar sus metas y sueños.
+              Facilitar procesos de transformaciones profundas y duraderas a
+              personas, empresas y organizaciones de todo el mundo para
+              maximizar su potencial, lograr resultados extraordinarios y vivir
+              vidas plenas y significativas. Enseñar principios universales y
+              estrategias efectivas, cultivar el liderazgo, la integridad y la
+              excelencia personal y profesional para que puedan alcanzar sus
+              metas y sueños.
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel5-content"
           id="panel5-header"
         >
           <Typography>
-            <h3>Mi Visión</h3>
+            <h3>Mi Visión:</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
+          <Typography className="justify">
             <p>
-              &quot;Crear una comunidad global de individuos y organizaciones
-              que operen con confianza, integridad y eficacia. Aspiro a ser
+              "Crear una comunidad global de individuos y organizaciones que
+              operen con confianza, integridad y eficacia. Aspiro a ser
               reconocido como un líder internacional en el desarrollo personal,
               organizacional y empresarial, transformando vidas e inspirando a
               millones a vivir vidas auténticas, plenas y extraordinarias,
               liderando un movimiento de cambio positivo que permita a las
               personas alcanzar sus sueños y mejorar el mundo que nos rodea.
-              Visiono habitar un mundo más consciente, compasivo y exitoso, en
+              Visualizo habitar un mundo más consciente, compasivo y exitoso, en
               donde cada persona tenga las herramientas para cambiar su vida,
               inspirar a otros a hacer lo mismo y generar un impacto positivo y
-              duradero en la sociedad.&quot;
+              duradero en la sociedad."
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel6-content"
           id="panel6-header"
         >
           <Typography>
-            <h3>Formación académica</h3>
+            <h3>Formación académica:</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
+          <Typography className="justify">
             <ul>
               <li>
                 ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
@@ -185,28 +229,33 @@ export default function Bio() {
               <br />
 
               <li>
-                INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
+                INSTITUTO ELBA SELDES: Master Trainer en PNL (Programación
                 Neurolingüística) (aval internacional IANLP)
               </li>
               <br />
               <li>
-                CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
+                CENTRO ARGENTINO DE HIPNOSIS: Master Hipnótico (Hipnoterapeuta)
                 con especialidad clínica
               </li>
               <br />
 
-              <li>UCA - Universidad Católica Argentina Neuropsicoeducador </li>
+              <li>UCA - Universidad Católica Argentina: Neuropsicoeducador </li>
               <br />
             </ul>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel7"}
         onChange={handleChange("panel7")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
+        <CustomAccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel7-content"
           id="panel7-header"
@@ -214,8 +263,8 @@ export default function Bio() {
           <Typography>
             <h3>Beneficios de un proceso de coaching y PNL</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
             <ul style={{ listStyleType: "none" }}>
               <li>
@@ -265,8 +314,8 @@ export default function Bio() {
               <br />
             </ul>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
     </div>
   );
 }

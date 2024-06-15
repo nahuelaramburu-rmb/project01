@@ -1,0 +1,6 @@
+.custom-carousel-indicators {
+    position: absolute;
+    bottom: -50px; 
+    left: 35%;
+    transform: translateX(-50%);
+  }

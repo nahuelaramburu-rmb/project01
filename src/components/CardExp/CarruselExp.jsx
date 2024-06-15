@@ -2,10 +2,15 @@ import { cardExpData } from "./CardExpData";
 import CardExp from "./CardExp";
 import foto1 from "../../assets/imagenes/fotochiani1.png";
 import "./CarruselExp.css";
+import logo from "../../assets/logos/logo.jpg";
 
 export default function CarruselExp() {
   return (
-    <div id="carouselExp" className="carousel slide" data-bs-ride="true">
+    <div
+      id="carouselExp"
+      className="carousel carousel-dark slide"
+      data-bs-ride="true"
+    >
       <div className="carousel-inner">
         <div className="carousel-item active">
           <CardExp
@@ -39,6 +44,11 @@ export default function CarruselExp() {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
+      <img
+        className="mlogo  position-absolute bottom-0 end-0 m-5"
+        src={logo}
+        alt="logo"
+      />
     </div>
   );
 }
