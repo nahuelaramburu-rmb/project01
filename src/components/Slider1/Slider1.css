@@ -3,11 +3,12 @@
 .slider-box {
   margin: 0;
   padding: 0;
+  border: 1px solid goldenrod;
   box-sizing: border-box;
   font-family: Inter, sans-serif;
   height: 500px;
   color: white;
-  background-color: #a0a0a0b6;
+  background-color: rgba(128, 128, 128, 0.158);
   display: flex;
   border-radius: 50px;
   justify-content: center;
@@ -77,5 +78,5 @@
 
 .slider-card:hover > .slider-background {
   z-index: 2;
-  filter: brightness(1);
+  filter: brightness(1.2);
 }

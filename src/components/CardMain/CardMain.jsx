@@ -7,17 +7,10 @@ import "./CardMain.css";
 export default function CardMain() {
   return (
     <div className="container ">
-      <div
-        className="row flexb1"
-        style={{
-          backgroundColor: "#eeeeee",
-          padding: "5px",
-          borderRadius: "20px",
-        }}
-      >
+      <div className="row flexb1">
         <div className="col-12 col-md-6 " align="center">
-          <h1 className="borderfn">Ricardo Chiani</h1>
-          <p style={{ fontSize: "30px" }}>
+          <h1 className="titlestyle">Ricardo Chiani</h1>
+          <p className="subtitlestyle">
             Coach Ontológico Profesional <br />
             Neuropsicoeducador <br />
             Hipnoterapeuta

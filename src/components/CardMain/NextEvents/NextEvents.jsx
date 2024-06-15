@@ -33,7 +33,7 @@ export default function NextEvents() {
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
+          <div class="carousel-item active" data-bs-interval="5000">
             <EventCard
               ciudad1="Ciudad"
               fecha1="Fecha"
@@ -46,7 +46,7 @@ export default function NextEvents() {
 
           {eventsData.map(
             ({ ciudad1, fecha1, lugar1, ciudad2, fecha2, lugar2 }) => (
-              <div className="carousel-item" data-bs-interval="3000">
+              <div className="carousel-item" data-bs-interval="5000">
                 <EventCard
                   ciudad1={ciudad1}
                   fecha1={fecha1}
