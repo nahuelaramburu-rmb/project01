@@ -10,11 +10,11 @@ export default function CardMain() {
       <div className="row flexb1">
         <div className="col-12 col-md-6 " align="center">
           <h1 className="titlestyle">Ricardo Chiani</h1>
-          <p className="subtitlestyle">
+          {/* <p className="subtitlestyle">
             Coach Ontológico Profesional <br />
             Neuropsicoeducador <br />
             Hipnoterapeuta
-          </p>
+          </p> */}
           <div className="row justify-content-center">
             <div className="col-auto">
               <NextEvents />
