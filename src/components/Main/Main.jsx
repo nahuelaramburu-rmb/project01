@@ -16,7 +16,6 @@ const Main = () => {
       <div id="inicio" className="col-12">
         <CardMain />
         <WhatsApp />
-        <div className="minspacer"></div>
       </div>
 
       <div className="minspacer"></div>
@@ -24,18 +23,22 @@ const Main = () => {
       <div id="bio" className="sec-box col-12">
         <h2>Bio</h2>
         <Bio />
-        <div className="minspacer"></div>
       </div>
+
+      <div className="minspacer"></div>
 
       <div id="experiencias" className="sec-box col-12">
         <h2>EXPERIENCIAS</h2>
         <CarruselExp />
-        <div className="minspacer"></div>
       </div>
+
+      <div className="minspacer"></div>
 
       <div id="contacto" className="col-12 margin-bottom">
         <ContactForm />
       </div>
+
+      <div className="minspacer"></div>
 
       <div id="clientes" className="col-12">
         <Carrusel />

@@ -9,14 +9,13 @@ const Header = () => {
 
   return (
     <Navbar
-      className="navbar"
+      className=""
       collapseOnSelect
       expand="lg"
-      bg="white"
       variant="light"
       expanded={expanded}
     >
-      <Navbar.Brand as={Link} to="/">
+      <Navbar.Brand as={Link} to="/" className="navbar-brand">
         <img
           src={Logo}
           alt="Logo"
