@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
+.section-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.158);
+}
+
 .slider-box {
   margin: 0;
   padding: 0;
@@ -7,7 +13,7 @@
   font-family: Inter, sans-serif;
   height: 500px;
   color: white;
-  background-color: #3750c06c;
+  z-index: 1;
   display: flex;
   border-radius: 50px;
   justify-content: center;
@@ -20,15 +26,56 @@
   display: block;
 }
 
-.slider-container {
-  width: 100%;
-  width: 820px;
-  height: 450px;
-  display: flex;
-  gap: 10px;
-  margin-inline: 50px;
-}
+@media only screen and (max-width: 512px) {
+  .slider-box {
+    height: 350px;
+  }
+  .slider-container {
+    width: 100%;
+    width: 400px;
+    height: 330px;
+    display: flex;
+    gap: 10px;
+    margin-inline: 50px;
+  }
 
+  .subtitle-box {
+    text-align: center;
+    z-index: 3;
+    position: relative;
+    top: -100px;
+    right: 0px;
+  }
+
+  .subtitlestyle {
+    font-size: 19px;
+    color: rgba(218, 165, 32, 0.493);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
+  }
+}
+@media only screen and (min-width: 513px) {
+  .slider-container {
+    width: 100%;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    gap: 10px;
+    margin-inline: 50px;
+  }
+  .subtitle-box {
+    text-align: center;
+    z-index: 3;
+    position: relative;
+    top: -170px;
+  }
+  .subtitlestyle {
+    font-size: 30px;
+    color: rgba(218, 165, 32, 0.493);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
+  }
+}
 .slider-card {
   min-width: 5px;
   height: auto;
@@ -63,5 +110,5 @@
 
 .slider-card:hover > .slider-background {
   z-index: 2;
-  filter: brightness(1);
+  filter: brightness(1.2);
 }

@@ -1,32 +1,65 @@
 import * as React from "react";
-import Stack from "@mui/material/Stack";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
-
-const DemoPaper = styled(Paper)(({ theme }) => ({
-  width: "160px",
-  height: "190px",
-  borderRadius: "20px",
-  padding: theme.spacing(2),
-  ...theme.typography.body2,
-  textAlign: "center",
-}));
+import EventCard from "./EventCard";
+import { eventsData } from "./EventsData";
 
 export default function NextEvents() {
   return (
-    <Stack direction="row" spacing={3}>
-      <DemoPaper square={false}>
-        <h3>La Plata</h3>
-        <p>21 de mayo 19:00 hs</p>
-        <br />
-        <p>Estadio Unico</p>
-      </DemoPaper>
-      <DemoPaper square={false}>
-        <h3>Berisso</h3>
-        <p>20 de Diciembre 19:00 hs</p>
-        <br />
-        <p>Estadio Malvinas Pepa</p>
-      </DemoPaper>
-    </Stack>
+    <div>
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <EventCard
+              ciudad1="Ciudad"
+              fecha1="Fecha"
+              lugar1="Lugar"
+              ciudad2="Ciudad"
+              fecha2="Fecha"
+              lugar2="Lugar"
+            />
+          </div>
+
+          {eventsData.map(
+            ({ ciudad1, fecha1, lugar1, ciudad2, fecha2, lugar2 }) => (
+              <div className="carousel-item" data-bs-interval="5000">
+                <EventCard
+                  ciudad1={ciudad1}
+                  fecha1={fecha1}
+                  lugar1={lugar1}
+                  ciudad2={ciudad2}
+                  fecha2={fecha2}
+                  lugar2={lugar2}
+                />
+              </div>
+            )
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
