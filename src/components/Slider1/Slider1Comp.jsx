@@ -23,13 +23,13 @@ export default function Slider1Comp() {
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         <p className="subtitle-box subtitlestyle">
           Coach Ontológico Profesional <br />
           Neuropsicoeducador <br />
           Hipnoterapeuta
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

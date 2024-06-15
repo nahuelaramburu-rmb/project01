@@ -42,9 +42,9 @@
   .subtitle-box {
     text-align: center;
     z-index: 3;
-    position: absolute;
-    top: 850px;
-    right: 75px;
+    position: relative;
+    top: -100px;
+    right: 0px;
   }
 
   .subtitlestyle {
@@ -66,9 +66,8 @@
   .subtitle-box {
     text-align: center;
     z-index: 3;
-    position: absolute;
-    top: 590px;
-    right: 150px;
+    position: relative;
+    top: -170px;
   }
   .subtitlestyle {
     font-size: 30px;

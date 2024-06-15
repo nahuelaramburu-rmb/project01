@@ -21,7 +21,8 @@ img.logo {
   max-width: 100px;
   margin-left: 30px;
   border-radius: 60%;
-  filter: invert() sepia(100%) saturate(700%) brightness(1.1); /* Aplica un tinte de color */
+  /* filter: invert() sepia(100%) saturate(700%) brightness(1.1);  */
+  /* Aplica un tinte de color */
 }
 
 .navbar-toggler {
