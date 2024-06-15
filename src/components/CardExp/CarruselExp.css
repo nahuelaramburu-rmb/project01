@@ -6,10 +6,20 @@
   outline: black;
   background-size: 100%, 100%;
   border-radius: 50%;
-  background-image: "../../assets/logos/Rchiani.ico";
 }
 
-.mlogo {
-  opacity: 50%;
-  border-radius: 80%;
+@media only screen and (min-width: 413px) {
+  .mlogo {
+    width: 100px;
+    opacity: 70%;
+    border-radius: 80%;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .mlogo {
+    width: 50px;
+    opacity: 70%;
+    border-radius: 80%;
+  }
 }
