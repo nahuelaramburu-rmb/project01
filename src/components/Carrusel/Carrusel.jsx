@@ -1,7 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import MediaQuery from "react-responsive";
-import CarruselItem from "./CarruselItem"; 
+import CarruselItem from "./CarruselItem";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Carrusel.css";
 
@@ -37,9 +37,9 @@ function Carrusel() {
       <div className="" style={{border:"solid 1px gold", padding: "7px", borderRadius:"20px"}}>    
       <div className="Carrusel m-0">
           <div>
-            <Marquee direction="left" speed={100} delay={1}>
+            <Marquee direction="left" speed={80} delay={1}>
               {images.map((image, index) => (
-                <CarruselItem key={index} src={image.src}/>
+                <CarruselItem key={index} src={image.src} alt={image.alt} />
               ))}
             </Marquee>
           </div>
@@ -63,6 +63,3 @@ function Carrusel() {
 }
 
 export default Carrusel;
-    
-
-
