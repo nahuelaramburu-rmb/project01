@@ -7,36 +7,36 @@ export default function NextEvents() {
     <div>
       <div
         id="carouselExampleDark"
-        className="carousel carousel-dark slide"
+        class="carousel carousel-dark slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-indicators" style={{ top: "210px" }}>
+        <div class="carousel-indicators" style={{top: '190px'}}>
           <button
             type="button"
             data-bs-target="#carouselExampleDark"
             data-bs-slide-to="0"
-            className="active"
+            class="active"
             aria-current="true"
             aria-label="Slide 1"
-            style={{ backgroundColor: "gold" }}
+            style={{backgroundColor: "gold"}}
           ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleDark"
             data-bs-slide-to="1"
             aria-label="Slide 2"
-            style={{ backgroundColor: "gold" }}
+            style={{backgroundColor: "gold"}}
           ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleDark"
             data-bs-slide-to="2"
             aria-label="Slide 3"
-            style={{ backgroundColor: "gold" }}
+            style={{backgroundColor: "gold"}}
           ></button>
         </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
             <EventCard
               ciudad1="Ciudad"
               fecha1="Fecha"
