@@ -17,8 +17,6 @@
 .titlestyle {
   font-weight: 700;
   font-size: 65px;
-  margin-top: -60px;
-  margin-bottom: 50px;
   color: rgba(218, 165, 32, 0.493);
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: gold;
@@ -32,15 +30,7 @@
   .align-pic-center {
     align-self: center;
   }
-
-    .titlestyle {
-      
-      margin-top: 0px;
-      margin-bottom: 50px;
-      
-    }
-  }
-
+}
 
 .bordercard {
   color: rgba(63, 61, 61, 0.226);
