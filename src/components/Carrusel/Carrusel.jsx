@@ -6,16 +6,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Carrusel.css";
 
 import img1 from "../../assets/imagenes/c1.png";
-import img2 from "../../assets/imagenes/c2.jpg";
+import img2 from "../../assets/imagenes/c2.png";
 import img3 from "../../assets/imagenes/c3.png";
 import img4 from "../../assets/imagenes/c4.png";
 import img5 from "../../assets/imagenes/c5.png";
 import img6 from "../../assets/imagenes/c6.png";
-import img7 from "../../assets/imagenes/c7.jpeg";
-import img8 from "../../assets/imagenes/c8.jpeg";
-import img9 from "../../assets/imagenes/c9.jpeg";
-import img10 from "../../assets/imagenes/c10.jpeg";
-import img11 from "../../assets/imagenes/imagen.png"
+import img7 from "../../assets/imagenes/c7.png";
+import img8 from "../../assets/imagenes/c8.png";
+import img9 from "../../assets/imagenes/c9.png";
+import img10 from "../../assets/imagenes/c10.png";
+// import img11 from "../../assets/imagenes/imagen.png"
 
 function Carrusel() {
   const images = [
@@ -32,9 +32,10 @@ function Carrusel() {
   ];
 
   return (
-    <div>
+  <div className="">
       <MediaQuery maxWidth={512}>
-        <div className="Carrusel">
+      <div className="" style={{border:"solid 1px gold", padding: "7px", borderRadius:"20px"}}>    
+      <div className="Carrusel m-0">
           <div>
             <Marquee direction="left" speed={100} delay={1}>
               {images.map((image, index) => (
@@ -42,29 +43,26 @@ function Carrusel() {
               ))}
             </Marquee>
           </div>
-        </div>
-    
+        </div> 
+      </div>      
       </MediaQuery>
       <MediaQuery minWidth={513}>
-        <div className="Carrusel">
-          <div className="glassT">
-            <div>
-              <Marquee direction="left" speed={110} delay={1}>
-                {images.map((image, index) => (
-                  <CarruselItem key={index} src={image.src} alt={image.alt} />
-                ))}
-              </Marquee>
-            </div>
-          </div>
-        </div>
-        <div className="minspacer"></div>
-        <div>
-          <img src={img11} alt="" />
-        </div>
-      </MediaQuery>
-    </div>
+              
+    <div className="" style={{border:"solid 1px gold", padding: "7px", borderRadius:"20px"}}>    
+      <div className="Carrusel m-0">
+          <Marquee direction="left" speed={100} delay={1}>
+            {images.map((image, index) => (
+            <CarruselItem key={index} src={image.src}/>
+            ))}
+          </Marquee>
+      </div> 
+    </div>  
+    </MediaQuery>
+  </div>
   );
 }
 
 export default Carrusel;
+    
+
 
