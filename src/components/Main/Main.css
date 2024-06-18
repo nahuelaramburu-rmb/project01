@@ -12,6 +12,10 @@ body {
   margin-bottom: 7px;
 }
 
+.container{
+  --bs-gutter-x: 1rem,
+}
+
 html {
   scroll-behavior: smooth;
 }
