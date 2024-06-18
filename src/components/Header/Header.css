@@ -17,14 +17,6 @@
   color: gold !important; /* Cambia el color de los links del NavBar */
 }
 
-img.logo {
-  max-width: 100px;
-  margin-left: 30px;
-  border-radius: 60%;
-  /* filter: invert() sepia(100%) saturate(700%) brightness(1.1);  */
-  /* Aplica un tinte de color */
-}
-
 .navbar-toggler {
   margin-right: 20px;
 }
@@ -108,7 +100,7 @@ img.logo {
 
 @media (min-width: 768px) {
   img.logo {
-    max-width: 200px;
+    max-width: 250px;
     margin-left: 50px;
   }
 }
