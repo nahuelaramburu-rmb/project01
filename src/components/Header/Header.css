@@ -18,7 +18,11 @@
 }
 
 .navbar-toggler {
+  background-color: rgba(128, 128, 128, 0.377);
   margin-right: 20px;
+}
+.navbar-toggler:hover {
+  border: solid 1px gold;
 }
 
 .navbar-close {
@@ -35,7 +39,7 @@
 
 .navbar-close:hover {
   font-size: 36px;
-  color: red;
+  color: goldenrod;
 }
 
 .header-text {
@@ -45,13 +49,13 @@
 
 @media (max-width: 991px) {
   .navbar-collapse.custom-navbar-collapse {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     width: 200px;
     height: auto;
-    background-color: white;
-    border-radius: 0;
+    background-color: rgba(128, 128, 128, 0.548);
+    border-radius: 20px;
     overflow: auto;
     transition: all 0.3s ease;
     z-index: 1050;
@@ -80,6 +84,7 @@
 
 @media (max-width: 575px) {
   img.logo {
+    width: 250px;
     margin-top: 25px;
   }
 }
@@ -93,14 +98,14 @@
 
 @media (min-width: 576px) {
   img.logo {
-    max-width: 150px;
+    max-width: 250px;
     margin-left: 50px;
   }
 }
 
 @media (min-width: 768px) {
   img.logo {
-    max-width: 250px;
+    max-width: 300px;
     margin-left: 50px;
   }
 }

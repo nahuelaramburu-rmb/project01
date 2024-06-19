@@ -12,7 +12,7 @@ const Header = () => {
       className=""
       collapseOnSelect
       expand="lg"
-      variant="light"
+      variant="dark"
       expanded={expanded}
     >
       <Navbar.Brand as={Link} to="/" className="navbar-brand">
