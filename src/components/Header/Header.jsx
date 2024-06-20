@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logos/logo.jpg";
+import Logo from "../../assets/logos/logodorado.png";
 import "./Header.css";
 
 const Header = () => {
@@ -12,7 +12,7 @@ const Header = () => {
       className=""
       collapseOnSelect
       expand="lg"
-      variant="light"
+      variant="dark"
       expanded={expanded}
     >
       <Navbar.Brand as={Link} to="/" className="navbar-brand">
