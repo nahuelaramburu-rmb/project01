@@ -16,15 +16,9 @@
 
 .titlestyle {
   font-weight: 700;
-  font-size: 65px;
+  font-size: 90px;
   color: rgba(218, 165, 32, 0.493);
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: gold;
-}
-.subtitlestyle {
-  font-size: 30px;
-  color: rgba(218, 165, 32, 0.493);
-  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: gold;
 }
 

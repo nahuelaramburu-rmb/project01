@@ -7,35 +7,33 @@
   pointer-events: none;
 }
 
-/* ContactForm.css */
+
 .form-control-custom, .btn-custom {
   background-color: #000;
   color: #fff;
-  border-radius: 10px; /* Adding border-radius */
+  border-radius: 10px; 
   text-align: center;
   width: 65%;
 }
 
 
 textarea.form-control-custom {
-  resize: none; /* Prevent resizing */
+  resize: none; 
   width: 65%;
 
 }
 
 .img-fluid {
-  border-radius: 20px; /* Adding border-radius to the image */
+  border-radius: 20px; 
 }
 
 
 button.btn-custom {
-  width: 50%; /* Half the size of the inputs */
+  width: 50%; 
 }
 
 
-/*Carousle*/
 
-/* Carrusel.css */
 
 .Carrusel {
   margin-top: 50px;
@@ -51,9 +49,9 @@ button.btn-custom {
 }
 
 .carrusel-image-wrapper img {
-  width: 100px; /* Ajusta este valor según el tamaño deseado */
-  height: 100px; /* Ajusta este valor según el tamaño deseado */
-  object-fit: contain; /* Asegura que la imagen se escale correctamente */
+  width: 100px;
+  height: 100px; 
+  object-fit: contain; 
 }
 
 
@@ -63,17 +61,16 @@ button.btn-custom {
   }
 }
 
-/* Ensure button is centered */
 button.btn-custom {
   margin-top: 10px;
   border-radius: 15px;
-  width: 30%; /* Half the size of the inputs */
-  align-self: center; /* Center the button */
+  width: 30%;
+  align-self: center; 
 }
 
 /* Placeholder color */
 .form-control-custom::placeholder {
-  color: rgba(255, 255, 255, 0.7); /* Make placeholders white with some transparency */
+  color: rgba(255, 255, 255, 0.7); 
 }
 
 
