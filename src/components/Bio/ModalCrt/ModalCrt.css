@@ -1,0 +1,14 @@
+.crt-img {
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.crt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
