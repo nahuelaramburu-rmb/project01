@@ -8,6 +8,7 @@ import { styled } from "@mui/material/styles";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ModalCrt from "./ModalCrt/ModalCrt";
 
+
 const CustomAccordion = styled(Accordion)({
   backgroundColor: "black", // Color del texto de los detalles
 });
@@ -26,6 +27,12 @@ export default function Bio() {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
+
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div className="container">
       <CustomAccordion
@@ -224,13 +231,13 @@ export default function Bio() {
         <CustomAccordionDetails>
           <Typography>
             <ul>
-              <li>
+              <li onClick={handleOpen}>
                 ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
                 Profesional (aval internacional FICOP - AACOP)
                 <ModalCrt />
               </li>
               <br />
-
+              <ModalCrt open={open} handleClose={handleClose} />
               <li>
                 INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
                 Neurolingüística) (aval internacional IANLP)
