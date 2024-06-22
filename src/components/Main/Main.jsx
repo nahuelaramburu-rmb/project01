@@ -7,6 +7,7 @@ import Bio from "../Bio/Bio";
 import "./Main.css";
 import CarruselExp from "../CardExp/CarruselExp";
 import WhatsApp from "../WhatsApp/WhatsApp";
+import Disciplinas from "../Disciplinas/Disciplinas";
 
 const Main = () => {
   return (
@@ -19,6 +20,10 @@ const Main = () => {
       </div>
 
       <div className="minspacer"></div>
+
+      <div>
+        <Disciplinas/>
+      </div>
 
       <div id="bio">
         <div className="sec-title col-12">
