@@ -7,7 +7,9 @@ import { styled } from "@mui/material/styles";
 // import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ModalCrt from "./ModalCrt/ModalCrt";
-
+import crt1 from "../../assets/Certificados/Titulo de COP H.png";
+import crt2 from "../../assets/Certificados/MASTER IANLP H.jpg";
+import crt3 from "../../assets/Certificados/MASTER HIPNOTIC CAH.jpg";
 
 const CustomAccordion = styled(Accordion)({
   backgroundColor: "black", // Color del texto de los detalles
@@ -27,11 +29,6 @@ export default function Bio() {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
 
   return (
     <div className="container">
@@ -231,22 +228,28 @@ export default function Bio() {
         <CustomAccordionDetails>
           <Typography>
             <ul>
-              <li onClick={handleOpen}>
-                ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
-                Profesional (aval internacional FICOP - AACOP)
-                <ModalCrt />
+              <li>
+                <ModalCrt imgCrt={crt1}>
+                  ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
+                  Profesional (aval internacional FICOP - AACOP)
+                </ModalCrt>
               </li>
               <br />
-              <ModalCrt open={open} handleClose={handleClose} />
+
               <li>
-                INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
-                Neurolingüística) (aval internacional IANLP)
+                <ModalCrt imgCrt={crt2}>
+                  INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
+                  Neurolingüística) (aval internacional IANLP)
+                </ModalCrt>
               </li>
               <br />
-              <li>
-                CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
-                con especialidad clínica
-              </li>
+              <ModalCrt imgCrt={crt3}>
+                <li>
+                  CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
+                  con especialidad clínica
+                </li>
+              </ModalCrt>
+
               <br />
 
               <li>UCA - Universidad Católica Argentina Neuropsicoeducador </li>
