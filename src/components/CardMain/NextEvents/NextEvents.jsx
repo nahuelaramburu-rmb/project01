@@ -11,10 +11,7 @@ export default function NextEvents() {
         class="carousel carousel-dark slide"
         data-bs-ride="carousel"
       >
-        <div
-          class="carousel-indicators"
-          style={{ top: "190px", marginTop: "10px" }}
-        >
+        <div class="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleDark"

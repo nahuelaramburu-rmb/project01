@@ -1,3 +1,15 @@
+.carousel-indicators {
+  top: 190px;
+  margin-top: 10px;
+}
+
+@media (min-width: 1400px) {
+  .carousel-indicators {
+    margin-top: 25px;
+  }
+}
+
+
 @media only screen and (min-width: 513px) {
   .ne-container {
     margin-top: 10px;

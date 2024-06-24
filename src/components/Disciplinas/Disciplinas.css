@@ -1,11 +1,13 @@
-.card{
+.card {
     position: relative;
-    width: 300px;
+    width: 100%; /* Hacemos que la tarjeta ocupe el 100% del contenedor */
+    max-width: 300px; /* Limitamos el ancho máximo de la tarjeta */
     height: 350px;
     background: #000;
-}
-
-.card .face{
+    margin: 10px; /* Agregamos margen para separar las tarjetas */
+  }
+  
+  .card .face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -13,21 +15,21 @@
     border-radius: 20px;
     overflow: hidden;
     transition: .5s;
-}
-
-.card .front{
+  }
+  
+  .card .front {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
-}
-
-.card .front img{
+  }
+  
+  .card .front img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.card .front h3{
+  }
+  
+  .card .front h3 {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -35,10 +37,10 @@
     line-height: 45px;
     color: gold;
     background: rgba(0, 0, 0, .4);
-    text-align: center
-}
-
-.card .back{
+    text-align: center;
+  }
+  
+  .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: gold;
     padding: 15px;
@@ -48,22 +50,58 @@
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 5px 10px #000;
-}
-
-.card .back h3{
+  }
+  
+  .card .back h3 {
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
-} 
-
-.card .back p{
+  }
+  
+  .card .back p {
     letter-spacing: 1px;
-}
-
-.card:hover .front{
+  }
+  
+  .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back{
+  }
+  
+  .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
-}
+  }
+  
+  /* Estilos para el contenedor de las tarjetas */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos responsive */
+  @media (max-width: 400px) {
+    .cards-container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 401px) and (max-width: 800px) {
+    .cards-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      flex: 1 1 calc(50% - 20px); /* 2 tarjetas por fila */
+    }
+  }
+  
+  @media (min-width: 801px) {
+    .cards-container {
+      flex-direction: row;
+    }
+  
+    .card {
+      flex: 1 1 calc(25% - 20px); /* 4 tarjetas por fila */
+    }
+  }
