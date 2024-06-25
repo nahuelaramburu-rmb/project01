@@ -26,7 +26,11 @@ const ContactForm = () => {
   return (
     <div className="w-100">
       <div className="d-flex align-items-center vh-50">
-        <div className="container d-flex flex-wrap justify-content-between" style={{border:"solid 1px gold", padding: "30px", borderRadius:"20px"}}>
+        <div
+          className="container d-flex flex-wrap justify-content-between"
+          style={{ padding: "30px", borderRadius: "20px" }}
+        >
+          {/* border:"solid 1px gold" */}
           <div className="form-container col-12 col-md-6 p-4 ">
             <form
               ref={form}

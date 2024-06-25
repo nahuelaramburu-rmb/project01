@@ -1,10 +1,11 @@
 .card {
     position: relative;
-    width: 100%; /* Hacemos que la tarjeta ocupe el 100% del contenedor */
-    max-width: 300px; /* Limitamos el ancho máximo de la tarjeta */
+    width: 100%; 
+    max-width: 300px; 
     height: 350px;
-    background: #000;
-    margin: 10px; /* Agregamos margen para separar las tarjetas */
+    background: rgba(128, 128, 128, 0.329);
+    margin: 10px; 
+    border-radius: 20px;
   }
   
   .card .face {
@@ -70,7 +71,7 @@
     transform: perspective(600px) rotateY(360deg);
   }
   
-  /* Estilos para el contenedor de las tarjetas */
+  
   .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +79,7 @@
     align-items: center;
   }
   
-  /* Estilos responsive */
+  
   @media (max-width: 400px) {
     .cards-container {
       flex-direction: column;
@@ -92,7 +93,7 @@
     }
   
     .card {
-      flex: 1 1 calc(50% - 20px); /* 2 tarjetas por fila */
+      flex: 1 1 calc(50% - 20px); 
     }
   }
   
@@ -102,6 +103,6 @@
     }
   
     .card {
-      flex: 1 1 calc(25% - 20px); /* 4 tarjetas por fila */
+      flex: 1 1 calc(25% - 20px); 
     }
   }

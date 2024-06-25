@@ -11,9 +11,10 @@ const Disciplinas = () => {
     <div
       className="cards-container"
       style={{
-        border: "solid 1px gold",
+        // border: "solid 1px gold",
         padding: "20px",
         borderRadius: "20px",
+        background: "rgba(128, 128, 128, 0.329)",
       }}
     >
       <div className="card">

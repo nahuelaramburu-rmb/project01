@@ -10,17 +10,18 @@ import ModalCrt from "./ModalCrt/ModalCrt";
 import crt1 from "../../assets/Certificados/Titulo de COP H.png";
 import crt2 from "../../assets/Certificados/MASTER IANLP H.jpg";
 import crt3 from "../../assets/Certificados/MASTER HIPNOTIC CAH.jpg";
+import "./Bio.css";
 
 const CustomAccordion = styled(Accordion)({
-  backgroundColor: "black", // Color del texto de los detalles
+  backgroundColor: "black",
 });
 
 const CustomAccordionSummary = styled(AccordionSummary)({
-  color: "gold", // Color del resumen del acordeón
+  color: "gold",
 });
 
 const CustomAccordionDetails = styled(AccordionDetails)({
-  color: "goldenrod", // Color del texto de los detalles
+  color: "goldenrod",
 });
 
 export default function Bio() {
