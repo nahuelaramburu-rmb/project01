@@ -6,21 +6,23 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 // import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import ModalCrt from "./ModalCrt/ModalCrt";
+import crt1 from "../../assets/Certificados/Titulo de COP H.png";
+import crt2 from "../../assets/Certificados/MASTER IANLP H.jpg";
+import crt3 from "../../assets/Certificados/MASTER HIPNOTIC CAH.jpg";
+import "./Bio.css";
 
 const CustomAccordion = styled(Accordion)({
-  backgroundColor: "black", // Color del texto de los detalles
+  backgroundColor: "black",
 });
 
 const CustomAccordionSummary = styled(AccordionSummary)({
-  color: "gold", // Color del resumen del acordeón
+  color: "gold",
 });
 
 const CustomAccordionDetails = styled(AccordionDetails)({
-  color: "goldenrod", // Color del texto de los detalles
+  color: "goldenrod",
 });
-
-
-
 
 export default function Bio() {
   const [expanded, setExpanded] = useState(false);
@@ -28,6 +30,7 @@ export default function Bio() {
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
+
   return (
     <div className="container">
       <CustomAccordion
@@ -39,17 +42,16 @@ export default function Bio() {
           overflow: "hidden",
         }}
       >
-  
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon style={{color:"gold"}} ExpandIconDetails/>}
+          expandIcon={
+            <ArrowDropDownIcon style={{ color: "gold" }} ExpandIconDetails />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
         >
-         
           <Typography>
             <h3>Quién soy?</h3>
           </Typography>
-          
         </CustomAccordionSummary>
         <CustomAccordionDetails>
           <Typography>
@@ -72,7 +74,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon style={{color:"gold"}}/>}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel2-content"
           id="panel2-header"
         >
@@ -113,7 +115,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon style={{color:"gold"}}/>}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
@@ -146,7 +148,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon style={{color:"gold"}} />}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel4-content"
           id="panel4-header"
         >
@@ -179,7 +181,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon style={{color:"gold"}} />}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel5-content"
           id="panel5-header"
         >
@@ -216,7 +218,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon style={{color:"gold"}}/>}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel6-content"
           id="panel6-header"
         >
@@ -228,20 +230,27 @@ export default function Bio() {
           <Typography>
             <ul>
               <li>
-                ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
-                Profesional (aval internacional FICOP - AACOP)
+                <ModalCrt imgCrt={crt1}>
+                  ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
+                  Profesional (aval internacional FICOP - AACOP)
+                </ModalCrt>
               </li>
               <br />
 
               <li>
-                INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
-                Neurolingüística) (aval internacional IANLP)
+                <ModalCrt imgCrt={crt2}>
+                  INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
+                  Neurolingüística) (aval internacional IANLP)
+                </ModalCrt>
               </li>
               <br />
-              <li>
-                CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
-                con especialidad clínica
-              </li>
+              <ModalCrt imgCrt={crt3}>
+                <li>
+                  CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
+                  con especialidad clínica
+                </li>
+              </ModalCrt>
+
               <br />
 
               <li>UCA - Universidad Católica Argentina Neuropsicoeducador </li>
@@ -261,7 +270,7 @@ export default function Bio() {
         }}
       >
         <CustomAccordionSummary
-          expandIcon={<ArrowDropDownIcon style={{color:"gold"}} />}
+          expandIcon={<ArrowDropDownIcon style={{ color: "gold" }} />}
           aria-controls="panel7-content"
           id="panel7-header"
         >

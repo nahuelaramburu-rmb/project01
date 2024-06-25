@@ -1,7 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import MediaQuery from "react-responsive";
-import CarruselItem from "./CarruselItem"; 
+import CarruselItem from "./CarruselItem";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Carrusel.css";
 
@@ -32,37 +32,41 @@ function Carrusel() {
   ];
 
   return (
-  <div className="">
+    <div className="">
       <MediaQuery maxWidth={512}>
-      <div className="" style={{border:"solid 1px gold", padding: "7px", borderRadius:"20px"}}>    
-      <div className="Carrusel m-0">
-          <div>
+        <div className="" style={{ padding: "7px", borderRadius: "20px" }}>
+          {/* {border:"solid 1px gold"}  */}
+          <div className="Carrusel m-0">
+            <div>
+              <Marquee direction="left" speed={100} delay={1}>
+                {images.map((image, index) => (
+                  <CarruselItem key={index} src={image.src} />
+                ))}
+              </Marquee>
+            </div>
+          </div>
+        </div>
+      </MediaQuery>
+      <MediaQuery minWidth={513}>
+        <div
+          className=""
+          style={{
+            //border: "solid 1px gold",
+            padding: "7px",
+            borderRadius: "20px",
+          }}
+        >
+          <div className="Carrusel m-0">
             <Marquee direction="left" speed={100} delay={1}>
               {images.map((image, index) => (
-                <CarruselItem key={index} src={image.src}/>
+                <CarruselItem key={index} src={image.src} />
               ))}
             </Marquee>
           </div>
-        </div> 
-      </div>      
+        </div>
       </MediaQuery>
-      <MediaQuery minWidth={513}>
-              
-    <div className="" style={{border:"solid 1px gold", padding: "7px", borderRadius:"20px"}}>    
-      <div className="Carrusel m-0">
-          <Marquee direction="left" speed={100} delay={1}>
-            {images.map((image, index) => (
-            <CarruselItem key={index} src={image.src}/>
-            ))}
-          </Marquee>
-      </div> 
-    </div>  
-    </MediaQuery>
-  </div>
+    </div>
   );
 }
 
 export default Carrusel;
-    
-
-
