@@ -1,0 +1,26 @@
+.carousel-indicators-cmodal {
+  top: 470px;
+  margin-top: 10px;
+}
+
+.img-cmodal {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1400px) {
+  .carousel-indicators-cmodal {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 513px) {
+  .mc-container {
+    margin-top: 10px;
+    padding: 10px;
+    /* display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; */
+  }
+}
