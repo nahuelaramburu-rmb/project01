@@ -230,7 +230,7 @@ export default function Bio() {
         <CustomAccordionDetails>
           <Typography>
             <ul>
-              <li>
+              <li className="list">
                 <ModalCrt imgCrt={crt1}>
                   ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
                   Profesional (aval internacional FICOP - AACOP)
@@ -238,7 +238,7 @@ export default function Bio() {
               </li>
               <br />
 
-              <li>
+              <li className="list">
                 <ModalCrtC>
                   INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
                   Neurolingüística) (aval internacional IANLP)
@@ -246,7 +246,7 @@ export default function Bio() {
               </li>
               <br />
               <ModalCrt imgCrt={crt3}>
-                <li>
+                <li className="list">
                   CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
                   con especialidad clínica
                 </li>

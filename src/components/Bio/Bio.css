@@ -1,8 +1,17 @@
 ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin-bottom: 10px; 
-  }
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.list {
+  transition: color 0.3s;
+  color: goldenrod;
+}
+
+.list:hover {
+  color: gold;
+}
