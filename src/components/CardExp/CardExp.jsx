@@ -21,14 +21,6 @@ export default function CardExp({ ImgSrc, CrdTitle, CrdText }) {
               image={`${ImgSrc}`}
               alt="img src"
             />
-            {/* <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {CrdTitle}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {CrdText}
-              </Typography>
-            </CardContent> */}
           </CardActionArea>
         </Card>
       </MediaQuery>
@@ -45,14 +37,6 @@ export default function CardExp({ ImgSrc, CrdTitle, CrdText }) {
               image={`${ImgSrc}`}
               alt="img src"
             />
-            {/* <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                {CrdTitle}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {CrdText}
-              </Typography>
-            </CardContent> */}
           </CardActionArea>
         </Card>
       </MediaQuery>

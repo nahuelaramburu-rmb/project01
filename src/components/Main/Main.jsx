@@ -64,9 +64,6 @@ const Main = () => {
       <div className="minspacer"></div>
 
       <div id="clientes">
-        {/* <div className="sec-title col-12">
-          <h2>PARTNERS</h2>
-        </div> */}
 
         <div className="col-12">
           <Carrusel />

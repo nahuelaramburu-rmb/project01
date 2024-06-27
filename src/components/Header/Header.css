@@ -6,15 +6,15 @@
 }
 
 .navbar-brand {
-  color: goldenrod !important; /* Cambia el color del texto de la marca del NavBar */
+  color: #D4AF37 !important; /* Cambia el color del texto de la marca del NavBar */
 }
 
 .nav-link-text {
-  color: goldenrod !important; /* Cambia el color de los links del NavBar */
+  color: #D4AF37 !important; /* Cambia el color de los links del NavBar */
 }
 
 .nav-link-text:hover {
-  color: gold !important; /* Cambia el color de los links del NavBar */
+  color: #D4AF37 !important; /* Cambia el color de los links del NavBar */
 }
 
 .navbar-toggler {
@@ -22,7 +22,7 @@
   margin-right: 20px;
 }
 .navbar-toggler:hover {
-  border: solid 1px gold;
+  border: solid 1px #D4AF37;
 }
 
 .navbar-close {
@@ -39,7 +39,7 @@
 
 .navbar-close:hover {
   font-size: 36px;
-  color: goldenrod;
+  color: #D4AF37;
 }
 
 .header-text {

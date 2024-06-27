@@ -49,9 +49,9 @@
 
   .subtitlestyle {
     font-size: 19px;
-    color: rgba(218, 165, 32, 0.493);
+    color: #D4AF37;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: gold;
+    -webkit-text-stroke-color: #D4AF37;
   }
 }
 @media only screen and (min-width: 513px) {
@@ -71,9 +71,9 @@
   }
   .subtitlestyle {
     font-size: 30px;
-    color: rgba(218, 165, 32, 0.493);
+    color: #D4AF37;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: gold;
+    -webkit-text-stroke-color: #D4AF37;
   }
 }
 .slider-card {

@@ -18,7 +18,7 @@ const CarruselItem = ({ src, alt }) => {
           height: "80px",
           objectFit: "cover",
           borderRadius: "20px",
-          boxShadow: hovered ? "0px 0px 20px goldenrod" : "none",
+          boxShadow: hovered ? "0px 0px 20px #D4AF37" : "none",
           transition: "box-shadow 0.3s ease",
         }}
       />

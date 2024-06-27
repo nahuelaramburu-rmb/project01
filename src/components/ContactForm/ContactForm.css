@@ -1,7 +1,7 @@
 .form-control-custom,
 .btn-custom {
   background-color: #000;
-  color: gold;
+  color: #D4AF37;
   border-radius: 20px;
   text-align: center;
   width: 75%;
@@ -24,7 +24,7 @@ textarea.form-control-custom {
 }
 
 .form-control-custom::placeholder {
-  color: gold !important
+  color: #D4AF37 !important
 }
 
 
@@ -37,7 +37,7 @@ textarea.form-control-custom {
   .form-control-custom,
   .btn-custom {
     background-color: #000;
-    color: gold;
+    color: #D4AF37;
     border-radius: 10px; /* Adding border-radius */
     text-align: center;
     width: 100%;
@@ -64,8 +64,7 @@ textarea.form-control-custom {
 .form-control-custom:hover,
 .btn-custom:hover {
   background-color: #000;
-  color: gold;
-  /* border: gold solid 1px; */
+  color: #D4AF37;
   box-shadow: none;
   outline: none;
 }

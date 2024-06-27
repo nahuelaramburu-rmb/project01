@@ -9,9 +9,9 @@ ul li {
 
 .list {
   transition: color 0.3s;
-  color: goldenrod;
+  color: #D4AF37;
 }
 
 .list:hover {
-  color: gold;
+  color: #D4AF37;
 }

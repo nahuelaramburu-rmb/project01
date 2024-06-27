@@ -7,7 +7,7 @@
 }
 body {
   background-color: rgb(66, 66, 66);
-  border: solid 1px gold;
+  border: solid 1px #D4AF37;
   border-radius: 20px;
   background-color: black;
   background-size: 100% 100%;
@@ -28,7 +28,7 @@ html {
 }
 
 .sec-title {
-  color: gold;
+  color: #D4AF37;
   margin: 5px;
   text-align: center;
   align-content: center;
@@ -37,11 +37,10 @@ html {
 
 .sec-box {
   text-align: center;
-  align-content: center;
+  /* align-content: center; */ /*ESTA LINEA FUE COMENTADA YA QUE ROMPE CON LAS IMAGENES DEL CARRUSEL DE FOTOS*/
   align-items: center;
   justify-content: center;
   background-color: rgba(128, 128, 128, 0.322);
-  /* border: solid 1px gold; */
   border-radius: 30px;
 }
 
@@ -60,7 +59,7 @@ html {
   height: 300px;
   width: 100%;
   background-color: black;
-  border: 3px solid gold;
+  border: 3px solid #D4AF37;
 }
 
 .minspacer {
