@@ -2,6 +2,9 @@
   top: 190px;
   margin-top: 10px;
 }
+.carousel {
+  margin-top: 100px;
+}
 
 @media (min-width: 1400px) {
   .carousel-indicators {

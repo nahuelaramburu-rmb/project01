@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Modal, Box } from "@mui/material";
+import Cmodal from "./Cmodal";
 
-export default function ModalCrt({ children, imgCrt }) {
+export default function ModalCrt({ children }) {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -39,17 +40,7 @@ export default function ModalCrt({ children, imgCrt }) {
             className="crt-container"
             style={{ width: "100%", height: "100%" }}
           >
-            <img
-              className="crt-img"
-              src={imgCrt}
-              alt="certificados"
-              style={{
-                width: "100%",
-                height: "auto",
-                borderRadius: "20px",
-                margin: "5px 0",
-              }}
-            />
+            <Cmodal />
           </div>
         </Box>
       </Modal>
