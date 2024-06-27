@@ -185,8 +185,7 @@ const Disciplinas = () => {
           <p>
             La PNL es una metodología que estudia cómo nuestros pensamientos,
             lenguaje y patrones de comportamiento afectan nuestras experiencias
-            de vida y cómo podemos cambiar estos patrones para lograr mejores
-            resultados{" "}
+            de vida y cómo podemos cambiar estos patrones{" "}
             <ModalDisciplinas
               title="Programación Neurolingüística (PNL)"
               content={
