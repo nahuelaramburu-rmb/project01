@@ -15,11 +15,13 @@
 }
 
 .titlestyle {
-  font-weight: 700;
-  font-size: 90px;
+  font-weight: 10;
+  font-size: 100px;
+  margin-top: -90px;
   color: rgba(218, 165, 32, 0.493);
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: gold;
+  font-family: 'Aldlery Swash', sans-serif;
 }
 
 @media screen and (max-width: 512px) {
@@ -29,6 +31,10 @@
   }
   .align-pic-center {
     align-self: center;
+  }
+  .titlestyle {
+    font-size: 70px;
+    margin-top: 0px;
   }
 }
 
