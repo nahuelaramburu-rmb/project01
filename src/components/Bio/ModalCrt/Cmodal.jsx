@@ -20,21 +20,21 @@ export default function Cmodal() {
             class="active"
             aria-current="true"
             aria-label="Slide 1"
-            style={{ backgroundColor: "gold" }}
+            style={{ backgroundColor: "#D4AF37" }}
           ></button>
           <button
             type="button"
             data-bs-target="#carouselCmodal"
             data-bs-slide-to="1"
             aria-label="Slide 2"
-            style={{ backgroundColor: "gold" }}
+            style={{ backgroundColor: "#D4AF37" }}
           ></button>
           <button
             type="button"
             data-bs-target="#carouselCmodal"
             data-bs-slide-to="2"
             aria-label="Slide 3"
-            style={{ backgroundColor: "gold" }}
+            style={{ backgroundColor: "#D4AF37" }}
           ></button>
         </div>
         <div class="carousel-inner">

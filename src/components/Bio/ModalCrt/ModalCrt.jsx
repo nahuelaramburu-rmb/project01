@@ -26,7 +26,7 @@ export default function ModalCrt({ children, imgCrt }) {
             width: { xs: "calc(100% - 4px)", sm: "700px" },
             height: { xs: "280px", sm: "550px" },
             backgroundColor: "rgba(128, 128, 128, 0.75)",
-            border: "2px solid goldenrod",
+            border: "2px solid #D4AF37", 
             boxShadow: "24px 24px 48px rgba(0, 0, 0, 0.2)",
             padding: "16px",
             display: "flex",

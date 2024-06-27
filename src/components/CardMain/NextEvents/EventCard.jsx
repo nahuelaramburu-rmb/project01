@@ -10,7 +10,7 @@ const EventPaper = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   textAlign: "center",
   backgroundColor: "rgba(0, 0, 0, 0.5)",
-  color: "gold",
+  color: "#D4AF37",
 }));
 
 export default function EventCard({

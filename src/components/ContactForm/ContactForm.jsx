@@ -30,7 +30,6 @@ const ContactForm = () => {
           className="container d-flex flex-wrap justify-content-between"
           style={{ padding: "30px", borderRadius: "20px" }}
         >
-          {/* border:"solid 1px gold" */}
           <div className="form-container col-12 col-md-6 p-4 ">
             <form
               ref={form}
