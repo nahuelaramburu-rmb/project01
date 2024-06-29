@@ -1,3 +1,12 @@
+@import url(https://db.onlinewebfonts.com/c/e552a73b2627d8afebb6bc486014dd9b?family=Adlery+Pro+Swash);
+
+.text-bio {
+  color: #d4af37;
+  font-size: 20px;
+  /* font-family: "Adlery Pro Swash", sans-serif; */
+  text-align: start;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -9,9 +18,9 @@ ul li {
 
 .list {
   transition: color 0.3s;
-  color: #D4AF37;
+  color: #d4af37;
 }
 
 .list:hover {
-  color: #D4AF37;
+  color: #ffe48d;
 }

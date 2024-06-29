@@ -251,6 +251,9 @@ export default function Bio() {
                   con especialidad clínica
                 </li>
               </ModalCrt>
+              <ModalCrtC>
+                <p>kdlgdfklgjgklsdfj</p>
+              </ModalCrtC>
 
               <br />
 
