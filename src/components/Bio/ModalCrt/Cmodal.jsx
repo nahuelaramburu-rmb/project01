@@ -1,10 +1,7 @@
 import * as React from "react";
 import "./Cmodal.css";
-import crtm1 from "../../../assets/Certificados/TRAINER IANLP H.jpg";
-import crtm2 from "../../../assets/Certificados/PRACTITIONER IANLP H.jpg";
-import crtm3 from "../../../assets/Certificados/MASTER IANLP H.jpg";
 
-export default function Cmodal() {
+export default function Cmodal({ crtm1, crtm2, crtm3 }) {
   return (
     <div className="mc-container">
       <div
