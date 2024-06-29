@@ -56,7 +56,7 @@ export default function Bio() {
         </CustomAccordionSummary>
         <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               Soy un profesional comprometido en asistir y acompañar a las
               personas, empresas y organizaciones a que vivan una vida inspirada
               y con propósito.
@@ -85,7 +85,7 @@ export default function Bio() {
         </CustomAccordionSummary>
         <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               Durante 36 años, fui violinista en la Orquesta del Teatro
               Argentino de La Plata, Buenos Aires, Argentina. Desde una edad
               temprana, comprendí el valor de la disciplina, enfrenté desafíos y
@@ -126,13 +126,13 @@ export default function Bio() {
         </CustomAccordionSummary>
         <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               Cuida tus pensamientos, porque se convertirán en tus palabras.
               Cuida tus palabras, porque se convertirán en tus actos. Cuida tus
               actos, porque convertirán en tus hábitos. Cuida tus hábitos,
               porque se convertirán en tu destino. Gandhi.
             </p>
-            <p>
+            <p className="text-bio">
               Comienza haciendo lo necesario, luego lo posible y terminaras
               haciendo lo imposible. San Francisco de Asís
             </p>
@@ -159,7 +159,7 @@ export default function Bio() {
         </CustomAccordionSummary>
         <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               Es facilitar procesos de transformaciones profundas y duraderas, a
               personas, empresas y organizaciones de todo el mundo, para
               maximizar su potencial, logrando resultados extraordinarios y
@@ -192,7 +192,7 @@ export default function Bio() {
         </CustomAccordionSummary>
         <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               &quot;Crear una comunidad global de individuos y organizaciones
               que operen con confianza, integridad y eficacia. Aspiro a ser
               reconocido como un líder internacional en el desarrollo personal,
@@ -230,7 +230,7 @@ export default function Bio() {
         <CustomAccordionDetails>
           <Typography>
             <ul>
-              <li className="list">
+              <li className="list text-bio">
                 <ModalCrt imgCrt={crt1}>
                   ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
                   Profesional (aval internacional FICOP - AACOP)
@@ -238,7 +238,7 @@ export default function Bio() {
               </li>
               <br />
 
-              <li className="list">
+              <li className="list text-bio">
                 <ModalCrt imgCrt={crt2}>
                   INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
                   Neurolingüística) (aval internacional IANLP)
@@ -246,18 +246,21 @@ export default function Bio() {
               </li>
               <br />
               <ModalCrt imgCrt={crt3}>
-                <li className="list">
+                <li className="list text-bio">
                   CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
                   con especialidad clínica
                 </li>
               </ModalCrt>
-              <ModalCrtC>
+              {/* <ModalCrtC>
                 <p>kdlgdfklgjgklsdfj</p>
-              </ModalCrtC>
+              </ModalCrtC> */}
+              {/* modal para posibles arreglos o usos futurios */}
 
               <br />
 
-              <li>UCA - Universidad Católica Argentina Neuropsicoeducador </li>
+              <li className="text-bio">
+                UCA - Universidad Católica Argentina Neuropsicoeducador{" "}
+              </li>
               <br />
             </ul>
           </Typography>
@@ -284,7 +287,7 @@ export default function Bio() {
         </CustomAccordionSummary>
         <CustomAccordionDetails>
           <Typography>
-            <ul style={{ listStyleType: "none" }}>
+            <ul className="text-bio" style={{ listStyleType: "none" }}>
               <li>
                 Convertirse en un observador más consciente de uno mismo y del
                 entorno.

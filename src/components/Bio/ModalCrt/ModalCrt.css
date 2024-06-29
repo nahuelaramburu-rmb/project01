@@ -22,7 +22,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    height: 400px;
+    height: 500px;
     background-color: rgba(128, 128, 128, 0.75);
     border: 2px solid #d4af37;
     box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.2);
@@ -61,7 +61,7 @@
     background-color: rgba(128, 128, 128, 0.75);
     border: 2px solid #d4af37;
     box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.2);
-    /* padding: 16px; */
+    padding: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
