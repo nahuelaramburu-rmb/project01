@@ -28,7 +28,7 @@ const ContactForm = () => {
       <div className="d-flex align-items-center vh-50">
         <div
           className="container d-flex flex-wrap justify-content-between"
-          style={{ padding: "30px", borderRadius: "20px" }}
+          style={{ padding: "30px", borderRadius: "20px", backgroundColor: "rgba(128, 128, 128, 0.329)"}}
         >
           <div className="form-container col-12 col-md-6 p-4 ">
             <form

@@ -239,10 +239,10 @@ export default function Bio() {
               <br />
 
               <li className="list">
-                <ModalCrtC>
+                <ModalCrt imgCrt={crt2}>
                   INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
                   Neurolingüística) (aval internacional IANLP)
-                </ModalCrtC>
+                </ModalCrt>
               </li>
               <br />
               <ModalCrt imgCrt={crt3}>

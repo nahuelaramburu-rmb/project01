@@ -38,7 +38,7 @@ textarea.form-control-custom {
   .btn-custom {
     background-color: #000;
     color: #D4AF37;
-    border-radius: 10px; /* Adding border-radius */
+    border-radius: 10px;
     text-align: center;
     width: 100%;
   }
@@ -53,7 +53,7 @@ textarea.form-control-custom {
   }
 
   button.btn-custom {
-    width: 25%;
+    width: auto;
   }
 }
 
@@ -69,7 +69,7 @@ textarea.form-control-custom {
   outline: none;
 }
 .btn-custom {
-  border: 1px solid rgba(255, 255, 255, 0.555);
+  border: 1px solid rgba(255, 255, 255, 0.555); 
 }
 
 .form-control-custom::placeholder {
