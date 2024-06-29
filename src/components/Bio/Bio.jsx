@@ -287,7 +287,7 @@ export default function Bio() {
         </CustomAccordionSummary>
         <CustomAccordionDetails>
           <Typography>
-            <ul className="text-bio" style={{ listStyleType: "none" }}>
+            <ul className="text-bio">
               <li>
                 Convertirse en un observador más consciente de uno mismo y del
                 entorno.

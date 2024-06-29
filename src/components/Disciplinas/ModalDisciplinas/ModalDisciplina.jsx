@@ -11,7 +11,7 @@ export default function ModalInfo({ title, content }) {
   return (
     <>
       <p onClick={handleOpen} className="more-info">
-        más información sobre {title.toLowerCase()}
+        más información ...
       </p>
       <Modal
         open={open}
