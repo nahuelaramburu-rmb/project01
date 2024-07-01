@@ -9,7 +9,7 @@ const WhatsApp = ({ iconSize }) => (
     target="_blank" 
     rel="noopener noreferrer"
     className="whatsapp-button"
-    style={{marginBottom:"50px", marginRight:"5px"}}
+    style={{marginBottom:"50px", marginRight:"30px"}}
   >
     <FontAwesomeIcon icon={faWhatsapp} className="icon" />
   </a>
