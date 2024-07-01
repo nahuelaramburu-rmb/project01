@@ -11,9 +11,9 @@ import "../SocialBar/css/SocialBar.css";
 export default function SocialBar() {
   return (
     <div className="social-container m-auto">
-      <a href="https://wa.me/5492216254625" className="whatsapp social">
+      {/* <a href="https://wa.me/5492216254625" className="whatsapp social">
         <FontAwesomeIcon icon={faWhatsapp} size="xl" />
-      </a>
+      </a> */}
 
       <a
         href="https://www.linkedin.com/in/ricardochiani/"
