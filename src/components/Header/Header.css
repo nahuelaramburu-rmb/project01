@@ -1,11 +1,28 @@
-img.logo {
-  max-width: 100px;
-  margin-left: 30px;
-  border-radius: 60%;
+.navbar-bg {
+  background-image: url("../../assets/img/blackandgold.webp"); /* Ruta a tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.navbar-brand {
+  color: #D4AF37 !important; /* Cambia el color del texto de la marca del NavBar */
+}
+
+.nav-link-text {
+  color: #D4AF37 !important; /* Cambia el color de los links del NavBar */
+}
+
+.nav-link-text:hover {
+  color: #D4AF37 !important; /* Cambia el color de los links del NavBar */
 }
 
 .navbar-toggler {
+  background-color: rgba(128, 128, 128, 0.377);
   margin-right: 20px;
+}
+.navbar-toggler:hover {
+  border: solid 1px #D4AF37;
 }
 
 .navbar-close {
@@ -22,7 +39,7 @@ img.logo {
 
 .navbar-close:hover {
   font-size: 36px;
-  color: red;
+  color: #D4AF37;
 }
 
 .header-text {
@@ -32,13 +49,13 @@ img.logo {
 
 @media (max-width: 991px) {
   .navbar-collapse.custom-navbar-collapse {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     width: 200px;
     height: auto;
-    background-color: white;
-    border-radius: 0;
+    background-color: rgba(128, 128, 128, 0.548);
+    border-radius: 20px;
     overflow: auto;
     transition: all 0.3s ease;
     z-index: 1050;
@@ -67,6 +84,7 @@ img.logo {
 
 @media (max-width: 575px) {
   img.logo {
+    width: 250px;
     margin-top: 25px;
   }
 }
@@ -80,14 +98,14 @@ img.logo {
 
 @media (min-width: 576px) {
   img.logo {
-    max-width: 150px;
+    max-width: 250px;
     margin-left: 50px;
   }
 }
 
 @media (min-width: 768px) {
   img.logo {
-    max-width: 200px;
+    max-width: 300px;
     margin-left: 50px;
   }
 }

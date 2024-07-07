@@ -3,57 +3,89 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
 // import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import SocialBar from "../SocialBar/SocialBar";
+import ModalCrt from "./ModalCrt/ModalCrt";
+import crt1 from "../../assets/Certificados/Titulo de COP H.png";
+import crt2 from "../../assets/Certificados/MASTER IANLP H.jpg";
+import crt3 from "../../assets/Certificados/MASTER HIPNOTIC CAH.jpg";
+import ModalCrtC from "./ModalCrt/ModalCrtC";
+import "./Bio.css";
+
+const CustomAccordion = styled(Accordion)({
+  backgroundColor: "black",
+});
+
+const CustomAccordionSummary = styled(AccordionSummary)({
+  color: "#D4AF37",
+});
+
+const CustomAccordionDetails = styled(AccordionDetails)({
+  color: "#D4AF37",
+});
+
 export default function Bio() {
   const [expanded, setExpanded] = useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
+
   return (
     <div className="container">
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+        <CustomAccordionSummary
+          expandIcon={
+            <ArrowDropDownIcon style={{ color: "#D4AF37" }} ExpandIconDetails />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
         >
           <Typography>
             <h3>Quién soy?</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               Soy un profesional comprometido en asistir y acompañar a las
               personas, empresas y organizaciones a que vivan una vida inspirada
               y con propósito.
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+        <CustomAccordionSummary
+          expandIcon={<ArrowDropDownIcon style={{ color: "#D4AF37" }} />}
           aria-controls="panel2-content"
           id="panel2-header"
         >
           <Typography>
             <h3>Mi historia</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               Durante 36 años, fui violinista en la Orquesta del Teatro
               Argentino de La Plata, Buenos Aires, Argentina. Desde una edad
               temprana, comprendí el valor de la disciplina, enfrenté desafíos y
@@ -71,53 +103,63 @@ export default function Bio() {
               del proceso de caminar hacia el éxito.
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+        <CustomAccordionSummary
+          expandIcon={<ArrowDropDownIcon style={{ color: "#D4AF37" }} />}
           aria-controls="panel3-content"
           id="panel3-header"
         >
           <Typography>
             <h3>Frases que me identifican</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               Cuida tus pensamientos, porque se convertirán en tus palabras.
               Cuida tus palabras, porque se convertirán en tus actos. Cuida tus
               actos, porque convertirán en tus hábitos. Cuida tus hábitos,
               porque se convertirán en tu destino. Gandhi.
             </p>
-            <p>
+            <p className="text-bio">
               Comienza haciendo lo necesario, luego lo posible y terminaras
               haciendo lo imposible. San Francisco de Asís
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
+        </CustomAccordionDetails>
+      </CustomAccordion>
+      <CustomAccordion
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+        <CustomAccordionSummary
+          expandIcon={<ArrowDropDownIcon style={{ color: "#D4AF37" }} />}
           aria-controls="panel4-content"
           id="panel4-header"
         >
           <Typography>
             <h3>Mi misión</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               Es facilitar procesos de transformaciones profundas y duraderas, a
               personas, empresas y organizaciones de todo el mundo, para
               maximizar su potencial, logrando resultados extraordinarios y
@@ -127,25 +169,30 @@ export default function Bio() {
               alcanzar sus metas y sueños.
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+        <CustomAccordionSummary
+          expandIcon={<ArrowDropDownIcon style={{ color: "#D4AF37" }} />}
           aria-controls="panel5-content"
           id="panel5-header"
         >
           <Typography>
             <h3>Mi Visión</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
-            <p>
+            <p className="text-bio">
               &quot;Crear una comunidad global de individuos y organizaciones
               que operen con confianza, integridad y eficacia. Aspiro a ser
               reconocido como un líder internacional en el desarrollo personal,
@@ -159,65 +206,88 @@ export default function Bio() {
               duradero en la sociedad.&quot;
             </p>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+        <CustomAccordionSummary
+          expandIcon={<ArrowDropDownIcon style={{ color: "#D4AF37" }} />}
           aria-controls="panel6-content"
           id="panel6-header"
         >
           <Typography>
             <h3>Formación académica</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
             <ul>
-              <li>
-                ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
-                Profesional (aval internacional FICOP - AACOP)
+              <li className="list text-bio">
+                <ModalCrt imgCrt={crt1}>
+                  ELAC - Escuela Latinoamericana de Coaching Coach Ontológico
+                  Profesional (aval internacional FICOP - AACOP)
+                </ModalCrt>
               </li>
               <br />
 
-              <li>
-                INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
-                Neurolingüística) (aval internacional IANLP)
+              <li className="list text-bio">
+                <ModalCrt imgCrt={crt2}>
+                  INSTITUTO ELBA SELDES Master Trainer en PNL (Programación
+                  Neurolingüística) (aval internacional IANLP)
+                </ModalCrt>
               </li>
               <br />
-              <li>
-                CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
-                con especialidad clínica
-              </li>
+              <ModalCrt imgCrt={crt3}>
+                <li className="list text-bio">
+                  CENTRO ARGENTINO DE HIPNOSIS Master Hipnótico (Hipnoterapeuta)
+                  con especialidad clínica
+                </li>
+              </ModalCrt>
+              {/* <ModalCrtC>
+                <p>kdlgdfklgjgklsdfj</p>
+              </ModalCrtC> */}
+              {/* modal para posibles arreglos o usos futurios */}
+
               <br />
 
-              <li>UCA - Universidad Católica Argentina Neuropsicoeducador </li>
+              <li className="text-bio">
+                UCA - Universidad Católica Argentina Neuropsicoeducador{" "}
+              </li>
               <br />
             </ul>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
 
-      <Accordion
+      <CustomAccordion
         expanded={expanded === "panel7"}
         onChange={handleChange("panel7")}
+        sx={{
+          marginBottom: 3,
+          borderRadius: 5,
+          overflow: "hidden",
+        }}
       >
-        <AccordionSummary
-          expandIcon={<ArrowDropDownIcon />}
+        <CustomAccordionSummary
+          expandIcon={<ArrowDropDownIcon style={{ color: "#D4AF37" }} />}
           aria-controls="panel7-content"
           id="panel7-header"
         >
           <Typography>
             <h3>Beneficios de un proceso de coaching y PNL</h3>
           </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
+        </CustomAccordionSummary>
+        <CustomAccordionDetails>
           <Typography>
-            <ul style={{ listStyleType: "none" }}>
+            <ul className="text-bio">
               <li>
                 Convertirse en un observador más consciente de uno mismo y del
                 entorno.
@@ -265,8 +335,8 @@ export default function Bio() {
               <br />
             </ul>
           </Typography>
-        </AccordionDetails>
-      </Accordion>
+        </CustomAccordionDetails>
+      </CustomAccordion>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logos/logo.jpg";
+import Logo from "../../assets/logos/logodorado.png";
 import "./Header.css";
 
 const Header = () => {
@@ -9,14 +9,13 @@ const Header = () => {
 
   return (
     <Navbar
-      className="navbar"
+      className=""
       collapseOnSelect
       expand="lg"
-      bg="white"
-      variant="light"
+      variant="dark"
       expanded={expanded}
     >
-      <Navbar.Brand as={Link} to="/">
+      <Navbar.Brand as={Link} to="/" className="navbar-brand">
         <img
           src={Logo}
           alt="Logo"
@@ -50,14 +49,6 @@ const Header = () => {
 
           <Nav.Link
             className="nav-link-text"
-            href="#clientes"
-            onClick={() => setExpanded(false)}
-          >
-            <span className="h3 font-weight-bold">CLIENTES</span>
-          </Nav.Link>
-
-          <Nav.Link
-            className="nav-link-text"
             href="#bio"
             onClick={() => setExpanded(false)}
           >
@@ -79,6 +70,14 @@ const Header = () => {
             onClick={() => setExpanded(false)}
           >
             <span className="h3 font-weight-bold">ESPECIALIZACIONES</span>
+          </Nav.Link> */}
+
+          {/* <Nav.Link
+            className="nav-link-text"
+            href="#clientes"
+            onClick={() => setExpanded(false)}
+          >
+            <span className="h3 font-weight-bold">CLIENTES</span>
           </Nav.Link> */}
 
           <Nav.Link

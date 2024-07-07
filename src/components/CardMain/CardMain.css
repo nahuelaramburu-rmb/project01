@@ -3,11 +3,24 @@
 }
 
 .flexb1 {
+  padding: 20px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  background-color: rgba(128, 128, 128, 0.329);
+}
+
+.titlestyle {
+  font-weight: 10;
+  font-size: 90px;
+  margin-top: -90px;
+  color: #d4af37;
+  -webkit-text-stroke-width: 1.1px;
+  -webkit-text-stroke-color: black;
+  font-family: "Aldlery Swash", sans-serif;
 }
 
 @media screen and (max-width: 512px) {
@@ -18,17 +31,14 @@
   .align-pic-center {
     align-self: center;
   }
+  .titlestyle {
+    font-size: 70px;
+    margin-top: 0px;
+  }
 }
 
-.borderfn {
-  font-weight: 700;
-  font-size: 65px;
-  color: rgba(128, 128, 128, 0.89);
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: rgb(226, 193, 43);
-}
 .bordercard {
-  color: rgba(63, 61, 61, 0.89);
+  color: rgba(63, 61, 61, 0.226);
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: rgb(226, 193, 43);
+  -webkit-text-stroke-color: #d4af37;
 }

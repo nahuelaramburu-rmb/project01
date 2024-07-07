@@ -1,0 +1,29 @@
+@import url(https://db.onlinewebfonts.com/c/e552a73b2627d8afebb6bc486014dd9b?family=Adlery+Pro+Swash);
+
+/* Importacion de Adlery Pro Swash por si se nescesita en otros lados */
+
+.text-bio {
+  color: #d4af37;
+  font-size: 20px;
+  /* font-family: "Adlery Pro Swash", sans-serif; */
+  text-align: start;
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1px;
+}
+
+.list {
+  transition: color 0.3s;
+  color: #d4af37;
+}
+
+.list:hover {
+  color: #ffe48d;
+}
