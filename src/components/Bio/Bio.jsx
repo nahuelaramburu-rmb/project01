@@ -10,7 +10,6 @@ import ModalCrt from "./ModalCrt/ModalCrt";
 import crt1 from "../../assets/Certificados/Titulo de COP H.png";
 import crt2 from "../../assets/Certificados/MASTER IANLP H.jpg";
 import crt3 from "../../assets/Certificados/MASTER HIPNOTIC CAH.jpg";
-import ModalCrtC from "./ModalCrt/ModalCrtC";
 import "./Bio.css";
 
 const CustomAccordion = styled(Accordion)({
