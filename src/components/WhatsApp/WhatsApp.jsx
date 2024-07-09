@@ -5,7 +5,7 @@ import "./WhatsApp.css";
 
 const WhatsApp = ({ iconSize }) => (
   <a
-    href="https://walink.co/f717a6"
+    href="https://wa.link/hvff9b"
     target="_blank"
     rel="noopener noreferrer"
     className="whatsapp-button"
