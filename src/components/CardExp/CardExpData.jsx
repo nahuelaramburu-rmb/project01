@@ -14,6 +14,18 @@ import img13 from "../../assets/imgExp/img13.jpeg";
 import img14 from "../../assets/imgExp/img14.jpeg";
 import img15 from "../../assets/imgExp/img15.jpeg";
 import img16 from "../../assets/imgExp/img16.jpeg";
+import img17 from "../../assets/imgExp/img17.JPG";
+import img18 from "../../assets/imgExp/img18.JPG";
+import img19 from "../../assets/imgExp/img19.JPG";
+import img20 from "../../assets/imgExp/img20.JPG";
+import img21 from "../../assets/imgExp/img21.JPG";
+import img22 from "../../assets/imgExp/img22.JPG";
+import img23 from "../../assets/imgExp/img23.JPG";
+import img24 from "../../assets/imgExp/img24.JPG";
+import img25 from "../../assets/imgExp/img25.JPG";
+import img26 from "../../assets/imgExp/img26.JPG";
+import img27 from "../../assets/imgExp/img27.JPG";
+import img28 from "../../assets/imgExp/img28.JPG";
 
 export const cardExpData = [
   {
@@ -93,6 +105,66 @@ export const cardExpData = [
   },
   {
     ImgSrc: img16,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img17,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img18,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img19,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img20,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img21,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img22,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img23,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img24,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img25,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img26,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img27,
+    CrdTitle: "Titulo de la Experiencia",
+    CrdText: "Texto descriptovo de la Experiencia",
+  },
+  {
+    ImgSrc: img28,
     CrdTitle: "Titulo de la Experiencia",
     CrdText: "Texto descriptovo de la Experiencia",
   },
