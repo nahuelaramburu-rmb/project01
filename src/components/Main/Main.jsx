@@ -8,6 +8,7 @@ import "./Main.css";
 import CarruselExp from "../CardExp/CarruselExp";
 import WhatsApp from "../WhatsApp/WhatsApp";
 import Disciplinas from "../Disciplinas/Disciplinas";
+import { FooterRMB } from "../FooterRMB/FooterRMB";
 
 const Main = () => {
   return (
@@ -73,6 +74,9 @@ const Main = () => {
 
       <div id="style={{ zIndex: 9999 }}">
         <SocialBar />
+      </div>
+      <div>
+        <FooterRMB />
       </div>
     </div>
   );
