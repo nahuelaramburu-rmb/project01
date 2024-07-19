@@ -55,13 +55,13 @@ const Header = () => {
             <span className="h3 font-weight-bold">BIO</span>
           </Nav.Link>
 
-          <Nav.Link
+          {/* <Nav.Link
             className="nav-link-text"
             href="#experiencias"
             onClick={() => setExpanded(false)}
           >
             <span className="h3 font-weight-bold">EXPERIENCIAS</span>
-          </Nav.Link>
+          </Nav.Link> */}
 
           <Nav.Link
             className="nav-link-text"

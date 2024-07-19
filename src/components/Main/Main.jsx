@@ -22,7 +22,7 @@ const Main = () => {
       <div className="minspacer"></div>
 
       <div>
-        <Disciplinas/>
+        <Disciplinas />
       </div>
 
       <div id="bio">
@@ -38,7 +38,7 @@ const Main = () => {
       </div>
 
       <div className="minspacer"></div>
-
+      {/* 
       <div id="experiencias">
         <div className="sec-title col-12">
           <h2>EXPERIENCIAS</h2>
@@ -47,7 +47,7 @@ const Main = () => {
         <div className="sec-box col-12 ">
           <CarruselExp />
         </div>
-      </div>
+      </div> */}
 
       <div className="minspacer"></div>
 
@@ -64,7 +64,6 @@ const Main = () => {
       <div className="minspacer"></div>
 
       <div id="clientes">
-
         <div className="col-12">
           <Carrusel />
         </div>
